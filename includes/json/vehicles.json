@@ -1,0 +1,101 @@
+{
+  "vehiculos": [
+    {"Populares": [
+      {"Chevrolet": [
+        {"Camaro": [
+          {"Version" : [
+              "6.2 Convertible SS V8",
+              "6.2 Coupé SS V8"
+            ]
+          }
+        ]},
+        {"Captiva": {}},
+        {"Cobalt": {}},
+        {"Cruze II": {}},
+        {"Equinox": {}},
+        {"Montana": {}},
+        {"Onix": {}},
+        {"Onix +": {}},
+        {"Prisma": {}},
+        {"S10": {}},
+        {"Spark": {}},
+        {"Sonic": {}},
+        {"Spin": {}},
+        {"Tracker": {}},
+        {"Traiblazer": {}}
+      ]},
+      {"Citroën": {
+        "Berlingo": {},
+        "C-Elysée": {},
+        "C3": {},
+        "C3 Aircross": {},
+        "C4": {},
+        "C4 Cactus": {},
+        "C4 Picasso": {},
+        "C4 Spacetourer": {},
+        "Grand C4 Picasso": {},
+        "Grand C4 Spacetourer": {},
+        "Jumper": {},
+        "Jumpy": {},
+        "Spacetourer": {}
+      }},
+      {"Fiat": {
+        "500": {},
+        "500 x": {},
+        "Argo": {},
+        "Cronos": {},
+        "Docló Cargo": {},
+        "Ducato": {},
+        "Fiorino": {},
+        "Grand Siena": {},
+        "Idea": {},
+        "Linea": {},
+        "Mobi": {},
+        "Strada": {},
+        "Tipo": {},
+        "Toro": {},
+        "Uno": {}
+      }},
+      {"Ford": {}},
+      {"Honda": {}},
+      {"Nissan": {}},
+      {"Peugeot": {}},
+      {"Ranault": {}},
+      {"Toyota": {}},
+      {"Volkswagen": {}}
+    ]},
+    {"Otros": [
+      {"Alfa Romeo": {}},
+      {"BIAC": {}},
+      {"BMW": {}},
+      {"Changan": {}},
+      {"Chery": {}},
+      {"DFSK": {}},
+      {"DS": {}},
+      {"Dodge": {}},
+      {"Great Wall": {}},
+      {"Haval": {}},
+      {"Hyundai": {}},
+      {"Iveco": {}},
+      {"JAC": {}},
+      {"Jaguar": {}},
+      {"Jeep": {}},
+      {"Kia": {}},
+      {"KyC": {}},
+      {"Land Rover": {}},
+      {"Lexus": {}},
+      {"Lifan": {}},
+      {"Maserati": {}},
+      {"Mercedes Benz": {}},
+      {"Mini": {}},
+      {"Mitsibishi": {}},
+      {"Porche": {}},
+      {"Ram": {}},
+      {"Shineray": {}},
+      {"Smart": {}},
+      {"Sabaru": {}},
+      {"Susuki": {}},
+      {"Volvo": {}}
+    ]}
+  ]
+}

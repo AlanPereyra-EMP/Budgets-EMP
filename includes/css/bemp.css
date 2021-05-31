@@ -1,0 +1,141 @@
+#bemp-page{
+  border-top: 60px solid #262626;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+#bemp-div{
+  height: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#bemp-h1{
+  align-items: center;
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  text-align: center;
+}
+#bemp-container-options{
+  background: #fff;
+  height: 62%;
+  margin: auto;
+  overflow: hidden;
+}
+@media(min-width:992px){
+  #bemp-h1{
+    height: 33%;
+  }
+  #bemp-container-options{
+    height: 53%;
+  }
+}
+#bemp-options{
+  height: 100%;
+  list-style: none;
+  overflow: auto;
+  padding: 20px;
+}
+#bemp-options li{
+  font-weight: 700;
+}
+#bemp-options li ul{
+  padding: 0;
+}
+#bemp-options li ul li {
+  font-weight: 400;
+  list-style: none;
+  padding: 10px 30px;
+}
+#bemp-options li ul li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+#bemp-btn-back{
+  background: transparent;
+  border: 1px solid;
+  left: 0;
+}
+#bemp-btn-next{
+  background: #005777;
+  border: 1px solid #005777;
+  color:#ffffff;
+  right: 0;
+}
+@media(min-width:992px){
+  #bemp-btn-back{
+    left: 10%;
+  }
+  #bemp-btn-next{
+    right: 10%;
+  }
+}
+.bemp-btn{
+  bottom: 3%;
+  cursor: pointer;
+  padding: 7px;
+  position: absolute;
+  margin: 0 20px;
+}
+.bemp-btn-disabled:focus{
+  outline: none;
+}
+.bemp-btn-disabled{
+  cursor: default;
+  opacity: .5;
+}
+/* Animation fade in */
+.bemp-fade-in{
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+	opacity: 0;
+  transition: all .3s;
+}
+.bemp-faded{
+  -khtml-opacity: 1!important;
+  -webkit-opacity: 1!important;
+  height: 100%!important;
+	opacity: 1!important;
+  transition: all .3s;
+}
+.bemp-d-none{
+  display: none!important;
+}
+/* Prevent default events */
+body {
+  height: 101vh;
+  overflow: hidden;
+}
+@media(min-width: 992px){
+  body {
+    overflow: hidden;
+  }
+}
+/* Empralidad-Theme support */
+#top-notice{
+  display: none;
+}
+#wpadminbar{
+  display: none!important;
+}
+a#btn-searchform, a.fa-dark.fab.fa-whatsapp, .img-fixed {
+  display: none!important;
+}
+.admin-fixed-top {
+  top: 0!important;
+  position: fixed;
+  width: 100vw;
+}
+.buttons-mobile{
+  display: none!important;
+}
+.content-background {
+  background: transparent;
+}
+header{
+  display: none;
+}
