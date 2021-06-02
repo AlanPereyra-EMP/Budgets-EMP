@@ -3,11 +3,14 @@
     {"Populares": [
       {"Chevrolet": [
         {"Camaro": [
-          {"Version" : [
-              "6.2 Convertible SS V8",
-              "6.2 Coupé SS V8"
-            ]
-          }
+          {"Manual" : [
+            {"Cabriolet (2 puertas)" : [
+              {"6.2 Convertible SS V8" : ""}
+            ]},
+            {"Coupé (2 puertas)" : [
+              {"6.2 Coupé SS V8" : ""}
+            ]}
+          ]}
         ]},
         {"Captiva": {}},
         {"Cobalt": {}},
@@ -24,21 +27,21 @@
         {"Tracker": {}},
         {"Traiblazer": {}}
       ]},
-      {"Citroën": {
-        "Berlingo": {},
-        "C-Elysée": {},
-        "C3": {},
-        "C3 Aircross": {},
-        "C4": {},
-        "C4 Cactus": {},
-        "C4 Picasso": {},
-        "C4 Spacetourer": {},
-        "Grand C4 Picasso": {},
-        "Grand C4 Spacetourer": {},
-        "Jumper": {},
-        "Jumpy": {},
-        "Spacetourer": {}
-      }},
+      {"Citroën": [
+        {"Berlingo": {}},
+        {"C-Elysée": {}},
+        {"C3": {}},
+        {"C3 Aircross": {}},
+        {"C4": {}},
+        {"C4 Cactus": {}},
+        {"C4 Picasso": {}},
+        {"C4 Spacetourer": {}},
+        {"Grand C4 Picasso": {}},
+        {"Grand C4 Spacetourer": {}},
+        {"Jumper": {}},
+        {"Jumpy": {}},
+        {"Spacetourer": {}}
+      ]},
       {"Fiat": {
         "500": {},
         "500 x": {},
@@ -65,7 +68,18 @@
       {"Volkswagen": {}}
     ]},
     {"Otros": [
-      {"Alfa Romeo": {}},
+      {"Alfa Romeo": [
+        {"Camaro": [
+          {"Manual" : [
+            {"Cabriolet (2 puertas)" : [
+              {"6.2 Convertible SS V8" : ""}
+            ]},
+            {"Coupé (2 puertas)" : [
+              {"6.2 Coupé SS V8" : ""}
+            ]}
+          ]}
+        ]}
+      ]},
       {"BIAC": {}},
       {"BMW": {}},
       {"Changan": {}},

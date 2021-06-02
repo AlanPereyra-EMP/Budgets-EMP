@@ -17,12 +17,18 @@
   align-items: center;
   display: flex;
   height: 20%;
+  margin: 0;
   justify-content: center;
   text-align: center;
 }
+#bemp-breadcrumbs{
+  font-size: 12px;
+  height: 5%;
+  padding: 0 10px;
+}
 #bemp-container-options{
   background: #fff;
-  height: 62%;
+  height: 60%;
   margin: auto;
   overflow: hidden;
 }
@@ -30,8 +36,11 @@
   #bemp-h1{
     height: 33%;
   }
+  #bemp-breadcrumbs{
+    height: 3%;
+  }
   #bemp-container-options{
-    height: 53%;
+    height: 50%;
   }
 }
 #bemp-options{
@@ -49,11 +58,42 @@
 #bemp-options li ul li {
   font-weight: 400;
   list-style: none;
-  padding: 10px 30px;
+  padding: 10px 0px 10px 30px;
 }
 #bemp-options li ul li:hover {
   background: #eee;
   cursor: pointer;
+}
+.bemp-option-actived{
+  background: #005777!important;
+  color: #ffffff;
+}
+#bemp-buttons{
+  height: 15%;
+  position: relative;
+}
+.bemp-btn{
+  bottom: 3%;
+  cursor: pointer;
+  font-size: 20px;
+  height: 60%;
+  margin: 2.5% 20px;
+  padding: 2%;
+  position: absolute;
+  width: 20%;
+}
+@media(max-width:991px){
+  .bemp-btn{
+    margin: 5% 20px;
+    width: 38%;
+  }
+}
+.bemp-btn-disabled:focus{
+  outline: none;
+}
+.bemp-btn-disabled{
+  cursor: default;
+  opacity: .5;
 }
 #bemp-btn-back{
   background: transparent;
@@ -73,20 +113,6 @@
   #bemp-btn-next{
     right: 10%;
   }
-}
-.bemp-btn{
-  bottom: 3%;
-  cursor: pointer;
-  padding: 7px;
-  position: absolute;
-  margin: 0 20px;
-}
-.bemp-btn-disabled:focus{
-  outline: none;
-}
-.bemp-btn-disabled{
-  cursor: default;
-  opacity: .5;
 }
 /* Animation fade in */
 .bemp-fade-in{
