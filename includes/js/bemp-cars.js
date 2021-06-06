@@ -306,5 +306,5 @@ function bempSendResult(){
   bempMsj = bempMsj.replace(/ /g,'%20');
   var url = window.location.href;
   var link = 'https://api.whatsapp.com/send?phone='+bempWsp+'&text='+bempMsj+'%0A%0A*'+msj+'*%0A%0A'+url;
-  console.log(link);
+  window.location.href = link;
 }
