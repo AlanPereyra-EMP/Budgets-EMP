@@ -2,6 +2,57 @@
   "vehiculos": [
     {"Populares": [
       {"Chevrolet": [
+        {"Agile": [
+          {"Nafta": [
+            {"Manual" : [
+              {"Hatchback (5 puertas)" : [
+                {"1.4 Ls Aa+da+mp3" : ""},
+                {"1.4 Ltz" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Manual" : [
+              {"Hatchback (5 puertas)" : [
+                {"1.4 Ls Aa+da+mp3" : ""},
+                {"1.4 Ltz" : ""}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Astra": [
+          {"Manual" : [
+            {"Sedán (4 puertas)" : [
+              {"2.0 Gls" : ""}
+            ]}
+          ]}
+        ]},
+        {"Aveo": [
+          {"Automática" : [
+            {"Sedán (4 puertas)" : [
+              {"1.6 Lt At" : ""}
+            ]}
+          ]},
+          {"Manual" : [
+            {"Sedán (4 puertas)" : [
+              {"1.6 Ls" : ""},
+              {"1.6 Lt" : ""}
+            ]}
+          ]}
+        ]},
+        {"Aveo G3x": [
+          {"Automática" : [
+            {"Sedán (4 puertas)" : [
+              {"1.6 Lt At" : ""}
+            ]}
+          ]},
+          {"Manual" : [
+            {"Sedán (4 puertas)" : [
+              {"1.6 Ls" : ""},
+              {"1.6 Lt" : ""}
+            ]}
+          ]}
+        ]},
         {"Camaro": [
           {"Manual" : [
             {"Cabriolet (2 puertas)" : [
@@ -12,20 +63,16 @@
             ]}
           ]}
         ]},
-        {"Captiva": {}},
-        {"Cobalt": {}},
-        {"Cruze II": {}},
-        {"Equinox": {}},
-        {"Montana": {}},
-        {"Onix": {}},
-        {"Onix +": {}},
-        {"Prisma": {}},
-        {"S10": {}},
-        {"Spark": {}},
-        {"Sonic": {}},
-        {"Spin": {}},
-        {"Tracker": {}},
-        {"Traiblazer": {}}
+        {"Camaro": [
+          {"Manual" : [
+            {"Cabriolet (2 puertas)" : [
+              {"6.2 Convertible SS V8" : ""}
+            ]},
+            {"Coupé (2 puertas)" : [
+              {"6.2 Coupé SS V8" : ""}
+            ]}
+          ]}
+        ]}
       ]},
       {"Citroën": [
         {"Berlingo": {}},

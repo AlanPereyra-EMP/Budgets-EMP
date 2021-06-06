@@ -3,6 +3,7 @@ bempSteps = [
   bempGetBrands,
   bempGetModel,
   bempGetTransmition,
+  bempGetEngine,
   bempGetType,
   bempGetVersion,
   bempGetKilometers,
@@ -176,7 +177,7 @@ function bempSelectTransmition(){
   }
 }
 
-function bempGetType(){
+function bempGetEngine(){
   fetch(bempUrl+'/includes/json/vehicles.json')
     .then(data => data.json())
     .then(data => {
@@ -187,13 +188,58 @@ function bempGetType(){
       path = path[bempSelected[2]];
       path = path[Object.keys(path)];
       var top = bempSelected[3];
+      var h1 = '¿Que tipo de motorización tiene?';
+      bempGetOptions(data, path, h1, false, top, bempSelectEngine);
+    });
+}
+
+function bempSelectEngine(){
+  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2];
+
+  var items = document.getElementsByClassName('bemp-option');
+  for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener('click', selectedEngine, false);
+  }
+
+  var lastSelected;
+  function selectedEngine(){
+    if(lastSelected){
+      lastSelected.classList.remove('bemp-option-actived');
+    }
+    this.classList.add('bemp-option-actived');
+
+    bempEnableNextBtn();
+
+    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+ this.innerHTML;
+    breadcrumb[3] = this.innerHTML;
+    var bempType = parseInt(this.dataset.item);
+    bempSelected[4] = bempType;
+    console.log(bempSelected);
+
+    lastSelected = this;
+  }
+}
+
+function bempGetType(){
+  fetch(bempUrl+'/includes/json/vehicles.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.vehiculos[bempSelected[0]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[1]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[2]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[3]];
+      path = path[Object.keys(path)];
+      var top = bempSelected[4];
       var h1 = '¿Que tipo de vehículo es?';
       bempGetOptions(data, path, h1, false, top, bempSelectType);
     });
 }
 
 function bempSelectType(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2];
+  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -209,10 +255,10 @@ function bempSelectType(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+ this.innerHTML;
-    breadcrumb[3] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+ this.innerHTML;
+    breadcrumb[4] = this.innerHTML;
     var bempType = parseInt(this.dataset.item);
-    bempSelected[4] = bempType;
+    bempSelected[5] = bempType;
     console.log(bempSelected);
 
     lastSelected = this;
@@ -231,14 +277,16 @@ function bempGetVersion(){
       path = path[Object.keys(path)];
       path = path[bempSelected[3]];
       path = path[Object.keys(path)];
-      var top = bempSelected[4];
+      path = path[bempSelected[4]];
+      path = path[Object.keys(path)];
+      var top = bempSelected[5];
       var h1 = '¿Que versión de vehículo es?';
       bempGetOptions(data, path, h1, false, top, bempSelectVersion);
     });
 }
 
 function bempSelectVersion(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3];
+  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -254,10 +302,10 @@ function bempSelectVersion(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+ this.innerHTML;
-    breadcrumb[4] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+ this.innerHTML;
+    breadcrumb[5] = this.innerHTML;
     var bempVersion = parseInt(this.dataset.item);
-    bempSelected[5] = bempVersion;
+    bempSelected[6] = bempVersion;
     console.log(bempSelected);
 
     lastSelected = this;
@@ -289,9 +337,9 @@ function bempGetKilometers(){
 }
 
 function bempSelectKilometers(){
-  breadcrumb[5] = this.value.slice(0, this.maxLength);
+  breadcrumb[6] = this.value.slice(0, this.maxLength);
 
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' km';
+  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' / '+breadcrumb[6]+' km';
 
   if(parseInt(this.value) <= parseInt(this.max)){
     bempEnableNextBtn();

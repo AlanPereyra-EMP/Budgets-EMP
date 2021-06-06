@@ -22,13 +22,15 @@
   text-align: center;
 }
 #bemp-breadcrumbs{
+  align-items: center;
+  display: flex;
   font-size: 12px;
-  height: 5%;
+  height: 9%;
   padding: 0 10px;
 }
 #bemp-container-options{
   background: #fff;
-  height: 60%;
+  height: 56%;
   margin: auto;
   overflow: hidden;
 }
