@@ -49,6 +49,9 @@
   overflow: auto;
   padding: 20px;
 }
+#bemp-options .d-flex{
+  display: flex;
+}
 #bemp-options li{
   font-weight: 700;
 }
@@ -67,6 +70,12 @@
 .bemp-option-actived{
   background: #005777!important;
   color: #ffffff;
+}
+#bemp-km{
+  margin: auto;
+}
+#bemp-km-input{
+  width: 100%;
 }
 #bemp-buttons{
   height: 15%;

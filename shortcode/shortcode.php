@@ -4,19 +4,22 @@ if(!shortcode_exists('budgets-emp')) {
 
   function bemp_shortcode($atts) {
     $atributes = shortcode_atts( array(
-      'terms'=> 'false',
-      'poli'=> 'false',
-      'type' => 'cars'
+      'wsp'   => '541149472377',
+      'msj'   => '',
+      'type'  => 'cars',
+      'max_km'=> 200000
     ), $atts );
 
     // Save necessary data on JS global variables
-    $terms = $atributes['terms'];
-    $poli = $atributes['poli'];
+    $wsp = $atributes['wsp'];
+    $msj = $atributes['msj'];
     $url = plugins_url('', __DIR__ );
+    $max_km = $atributes['max_km'];
     $js_variables = '<script>'.
-                      'var cempTerms = "'. $terms .'"; '.
-                      'var cempPoli = "'. $poli .'"; '.
+                      'var bempWsp = "'. $wsp .'"; '.
+                      'var bempMsj = "'. $msj .'";'.
                       'var bempUrl = "'. $url .'";'.
+                      'var bempMaxKm = "'. $max_km .'";'.
                     '</script>';
 
     // Enqueue basic Js and Css

@@ -5,7 +5,8 @@ bempSteps = [
   bempGetTransmition,
   bempGetType,
   bempGetVersion,
-  bempGetKilometers
+  bempGetKilometers,
+  bempSendResult
 ];
 
 // Get vehicle.json data and create list with this
@@ -264,15 +265,46 @@ function bempSelectVersion(){
 }
 
 function bempGetKilometers(){
+  bempNextBtn.innerHTML = 'Enviar';
+  bempDisableNextBtn();
   bempH1.innerHTML = '¿Cuántos kilometros tiene el vehículo?';
-  bempOptions.innerHTML = '';
+  bempOptions.classList.add('d-flex');
+  bempOptions.innerHTML = '<div id="bemp-km"></div>';
+  bempKm = document.getElementById('bemp-km');
+
   var x = document.createElement("input");
+  x.setAttribute("id", "bemp-km-input");
   x.setAttribute("type", "number");
-  x.setAttribute("placeholder", "Máximo 200.000km");
+  x.setAttribute("placeholder", "Escribí acá los kilometros");
   x.setAttribute("min", "0");
-  x.setAttribute("max", "200000");
-  var z = document.createElement("input");
-  z.setAttribute("type", "submit");
-  bempOptions.appendChild(x);
-  bempOptions.appendChild(z);
+  x.setAttribute("max", bempMaxKm);
+  x.setAttribute("maxLength", bempMaxKm.length);
+  bempKm.appendChild(x);
+
+  bempKm.innerHTML += '<small>(tomamos vehículos de máximo '+ x.max +'km)</small>';
+
+  var input = document.getElementById('bemp-km-input');
+  input.addEventListener('keyup', bempSelectKilometers, false);
+  input.addEventListener('change', bempSelectKilometers, false);
+}
+
+function bempSelectKilometers(){
+  breadcrumb[5] = this.value.slice(0, this.maxLength);
+
+  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' km';
+
+  if(parseInt(this.value) <= parseInt(this.max)){
+    bempEnableNextBtn();
+  }else{
+    bempDisableNextBtn();
+  }
+}
+
+function bempSendResult(){
+  msj = bempBreadcrumbs.innerHTML;
+  msj = msj.replace(/ /g,'%20');
+  bempMsj = bempMsj.replace(/ /g,'%20');
+  var url = window.location.href;
+  var link = 'https://api.whatsapp.com/send?phone='+bempWsp+'&text='+bempMsj+'%0A%0A*'+msj+'*%0A%0A'+url;
+  console.log(link);
 }

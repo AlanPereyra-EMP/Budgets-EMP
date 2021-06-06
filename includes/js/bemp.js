@@ -2,6 +2,9 @@
 var bempH1 = document.getElementById('bemp-h1');
 var bempBreadcrumbs = document.getElementById('bemp-breadcrumbs');
 var bempOptions = document.getElementById('bemp-options');
+var bempPrevBtn = document.getElementById('bemp-btn-prev');
+var bempNextBtn = document.getElementById('bemp-btn-next');
+
 
 // Define global variables
 var breadcrumb = [];
@@ -31,7 +34,6 @@ function bempDisablePrevBtn(){
   bempPrevBtn.classList.add('bemp-btn-disabled');
 }
 function bempDisableNextBtn(){
-  var bempNextBtn = document.getElementById('bemp-btn-next');
   bempNextBtn.disabled = true;
   bempNextBtn.classList.add('bemp-btn-disabled');
 }
@@ -40,7 +42,6 @@ bempDisableNextBtn();
 
 // Enable prev and next buttons
 function bempEnablePrevBtn(){
-  var bempPrevBtn = document.getElementById('bemp-btn-prev');
   bempPrevBtn.disabled = false;
   bempPrevBtn.classList.remove('bemp-btn-disabled');
 }

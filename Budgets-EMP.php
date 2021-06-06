@@ -7,7 +7,7 @@ Author: Empralidad
 Author URI: https://empralidad.com.ar/
 Text Domain: cemp
 License: GNU GENERAL PUBLIC LICENSE Version 3
-Version: 0.0.1
+Version: 1.0.0
 */
 if ( ! defined( 'ABSPATH' ) ){
 	exit;
