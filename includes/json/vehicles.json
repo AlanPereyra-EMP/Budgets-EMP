@@ -21,45 +21,98 @@
           ]}
         ]},
         {"Astra": [
-          {"Manual" : [
-            {"Sedán (4 puertas)" : [
-              {"2.0 Gls" : ""}
+          {"Nafta": [
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"2.0 Gls" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"2.0 Gls" : ""}
+              ]}
             ]}
           ]}
         ]},
         {"Aveo": [
-          {"Automática" : [
-            {"Sedán (4 puertas)" : [
-              {"1.6 Lt At" : ""}
-            ]}
-          ]},
-          {"Manual" : [
-            {"Sedán (4 puertas)" : [
-              {"1.6 Ls" : ""},
-              {"1.6 Lt" : ""}
-            ]}
-          ]}
-        ]},
-        {"Aveo G3x": [
-          {"Automática" : [
-            {"Sedán (4 puertas)" : [
-              {"1.6 Lt At" : ""}
-            ]}
-          ]},
-          {"Manual" : [
-            {"Sedán (4 puertas)" : [
-              {"1.6 Ls" : ""},
-              {"1.6 Lt" : ""}
-            ]}
-          ]}
-        ]},
-        {"Camaro": [
-          {"Manual" : [
-            {"Cabriolet (2 puertas)" : [
-              {"6.2 Convertible SS V8" : ""}
+          {"Nafta": [
+            {"Automática" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Lt At" : ""}
+              ]}
             ]},
-            {"Coupé (2 puertas)" : [
-              {"6.2 Coupé SS V8" : ""}
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Ls" : ""},
+                {"1.6 Lt" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Automática" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Lt At" : ""}
+              ]}
+            ]},
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Ls" : ""},
+                {"1.6 Lt" : ""}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Aveo G3": [
+          {"Nafta": [
+            {"Automática" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Lt At" : ""}
+              ]}
+            ]},
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Ls" : ""},
+                {"1.6 Lt" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Automática" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Lt At" : ""}
+              ]}
+            ]},
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"1.6 Ls" : ""},
+                {"1.6 Lt" : ""}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Captiva": [
+          {"Automática": [
+            {"Diesel" : [
+              {"SUV (5 puertas)" : [
+                {"2.0 Vcdi Ltz At" : ""},
+                {"2.0 Ltz Awd D 184cv At" : ""}
+              ]}
+            ]}
+          ]},
+          {"Manual": [
+            {"Nafta" : [
+              {"SUV (5 puertas)" : [
+                {"2.4 Lt Mt" : ""},
+                {"2.4 Lt Mt Awd 167cv" : ""}
+              ]}
+            ]},
+            {"Nafta + GNC" : [
+              {"SUV (5 puertas)" : [
+                {"2.4 Lt Mt" : ""},
+                {"2.4 Lt Mt Awd 167cv" : ""}
+              ]}
             ]}
           ]}
         ]},

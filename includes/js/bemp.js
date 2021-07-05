@@ -51,6 +51,13 @@ function bempEnableNextBtn(){
   bempNextBtn.classList.remove('bemp-btn-disabled');
 }
 
+// Add an option to the item
+function bempAddOption(name, select){
+  var option = document.createElement('option');
+  option.setAttribute('value', name);
+  option.innerHTML = name;
+  select.appendChild(option);
+}
 
 // Add fade in animation class
 window.onload = function(){

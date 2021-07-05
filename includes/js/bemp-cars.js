@@ -1,4 +1,4 @@
-// Define all app steps functions
+// Define the app steps functions
 bempSteps = [
   bempGetBrands,
   bempGetModel,
@@ -7,6 +7,7 @@ bempSteps = [
   bempGetType,
   bempGetVersion,
   bempGetKilometers,
+  bempGetUbication,
   bempSendResult
 ];
 
@@ -313,7 +314,6 @@ function bempSelectVersion(){
 }
 
 function bempGetKilometers(){
-  bempNextBtn.innerHTML = 'Enviar';
   bempDisableNextBtn();
   bempH1.innerHTML = '¿Cuántos kilometros tiene el vehículo?';
   bempOptions.classList.add('d-flex');
@@ -329,7 +329,7 @@ function bempGetKilometers(){
   x.setAttribute("maxLength", bempMaxKm.length);
   bempKm.appendChild(x);
 
-  bempKm.innerHTML += '<small>(tomamos vehículos de máximo '+ x.max +'km)</small>';
+  bempKm.innerHTML += '<small>Tomamos vehículos de máximo '+ x.max +'km</small>';
 
   var input = document.getElementById('bemp-km-input');
   input.addEventListener('keyup', bempSelectKilometers, false);
@@ -342,6 +342,37 @@ function bempSelectKilometers(){
   bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' / '+breadcrumb[6]+' km';
 
   if(parseInt(this.value) <= parseInt(this.max)){
+    bempEnableNextBtn();
+  }else{
+    bempDisableNextBtn();
+  }
+}
+
+function bempGetUbication(){
+  bempH1.innerHTML = '¿Dónde está ubicado el vehículo?';
+  bempNextBtn.innerHTML = 'Enviar';
+  bempDisableNextBtn();
+  bempOptions.innerHTML = '<select id="bemp-select"></select>'
+
+  var select = document.getElementById('bemp-select');
+
+  bempAddOption('Selecciona una opción', select);
+  bempAddOption('Capital Federal', select);
+  bempAddOption('Bs. As. Zona Norte', select);
+  bempAddOption('Bs. As. Zona Oeste', select);
+  bempAddOption('Bs. As. Zona Sur', select);
+  bempAddOption('La Plata', select);
+  bempAddOption('Otra', select);
+
+  select.addEventListener('change', bempSelectUbication, false);
+}
+
+function bempSelectUbication(){
+  if(this.value != 'Selecciona una opción'){
+    breadcrumb[7] = this.value;
+
+    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' / '+breadcrumb[6]+' km'+' / '+breadcrumb[7];
+
     bempEnableNextBtn();
   }else{
     bempDisableNextBtn();

@@ -79,6 +79,19 @@
 #bemp-km-input{
   width: 100%;
 }
+#bemp-km small{
+  color: #999;
+}
+#bemp-select{
+  height: 100px;
+  margin: auto;
+  width: 100%;
+}
+@media (min-width: 991px){
+  #bemp-select{
+    width: 50%;
+  }
+}
 #bemp-buttons{
   height: 15%;
   position: relative;
@@ -153,6 +166,13 @@ body {
   }
 }
 /* Empralidad-Theme support */
+#navbar-background{
+  background: var(--emp-nav-bg)!important;
+  transition: .3s all;
+}
+#bemp-page{
+  border-top: 60px solid var(--nav-bg);
+}
 #top-notice{
   display: none;
 }
