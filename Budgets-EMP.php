@@ -5,9 +5,9 @@ Plugin URI: https://empralidad.com.ar/chat-emp
 Description: Budgets EMP es un plugin para WordPress que añade un presupuestador de vehiculos.
 Author: Empralidad
 Author URI: https://empralidad.com.ar/
-Text Domain: cemp
+Text Domain: bemp
 License: GNU GENERAL PUBLIC LICENSE Version 3
-Version: 1.0.0
+Version: 1.0.1
 */
 if ( ! defined( 'ABSPATH' ) ){
 	exit;
