@@ -43,7 +43,7 @@ if(!shortcode_exists('budgets-emp')) {
                   <ul id="bemp-options"></ul>
                 </div>
                 <div id="bemp-buttons">
-                  <button id="bemp-btn-prev" class="bemp-btn bemp-btn-disabled" onclick="bempPrevStep()">Anterior</button>
+                  <button id="bemp-btn-prev" class="bemp-btn bemp-btn-disabled btn-outline-light" onclick="bempPrevStep()">Anterior</button>
                   <button id="bemp-btn-next" class="bemp-btn bemp-btn-disabled" onclick="bempNextStep()">Siguiente</button>
                 </div>
               </div>
