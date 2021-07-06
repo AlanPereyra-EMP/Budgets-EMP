@@ -72,8 +72,8 @@
   cursor: pointer;
 }
 .bemp-option-actived{
-  background: #005777!important;
-  color: #ffffff;
+  background: var(--emp-content-color)!important;
+  color: var(--emp-content-bg)!important;
 }
 #bemp-km{
   margin: auto;
