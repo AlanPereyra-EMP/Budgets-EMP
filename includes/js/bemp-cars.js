@@ -93,7 +93,7 @@ function bempSelectBrand(){
     bempEnableNextBtn();
     this.classList.add('bemp-option-actived');
     bempBreadcrumbs.innerHTML = this.innerHTML;
-    breadcrumb[0] = this.innerHTML;
+    bC[0] = this.innerHTML;
     bempSelected = [parseInt(this.dataset.top),parseInt(this.dataset.item)];
     console.log(bempSelected);
   }
@@ -111,7 +111,7 @@ function bempGetModel(){
 }
 
 function bempSelectModel(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0];
+  bempBreadcrumbs.innerHTML = bC[0];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -127,8 +127,8 @@ function bempSelectModel(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0] +' / '+ this.innerHTML;
-    breadcrumb[1] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = bC[0] +' / '+ this.innerHTML;
+    bC[1] = this.innerHTML;
     var bempModel = parseInt(this.dataset.item);
     bempSelected[2] = bempModel;
     console.log(bempSelected);
@@ -152,7 +152,7 @@ function bempGetTransmition(){
 }
 
 function bempSelectTransmition(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1];
+  bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -168,8 +168,8 @@ function bempSelectTransmition(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1] +' / '+ this.innerHTML;
-    breadcrumb[2] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1] +' / '+ this.innerHTML;
+    bC[2] = this.innerHTML;
     var bempTransmition = parseInt(this.dataset.item);
     bempSelected[3] = bempTransmition;
     console.log(bempSelected);
@@ -195,7 +195,7 @@ function bempGetEngine(){
 }
 
 function bempSelectEngine(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2];
+  bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -211,8 +211,8 @@ function bempSelectEngine(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+ this.innerHTML;
-    breadcrumb[3] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+ this.innerHTML;
+    bC[3] = this.innerHTML;
     var bempType = parseInt(this.dataset.item);
     bempSelected[4] = bempType;
     console.log(bempSelected);
@@ -240,7 +240,7 @@ function bempGetType(){
 }
 
 function bempSelectType(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3];
+  bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -256,8 +256,8 @@ function bempSelectType(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+ this.innerHTML;
-    breadcrumb[4] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+ this.innerHTML;
+    bC[4] = this.innerHTML;
     var bempType = parseInt(this.dataset.item);
     bempSelected[5] = bempType;
     console.log(bempSelected);
@@ -287,7 +287,7 @@ function bempGetVersion(){
 }
 
 function bempSelectVersion(){
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4];
+  bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4];
 
   var items = document.getElementsByClassName('bemp-option');
   for (var i = 0; i < items.length; i++) {
@@ -303,8 +303,8 @@ function bempSelectVersion(){
 
     bempEnableNextBtn();
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+ this.innerHTML;
-    breadcrumb[5] = this.innerHTML;
+    bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4]+' / '+ this.innerHTML;
+    bC[5] = this.innerHTML;
     var bempVersion = parseInt(this.dataset.item);
     bempSelected[6] = bempVersion;
     console.log(bempSelected);
@@ -337,9 +337,9 @@ function bempGetKilometers(){
 }
 
 function bempSelectKilometers(){
-  breadcrumb[6] = this.value.slice(0, this.maxLength);
+  bC[6] = this.value.slice(0, this.maxLength);
 
-  bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' / '+breadcrumb[6]+' km';
+  bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4]+' / '+bC[5]+' / '+bC[6]+' km';
 
   if(parseInt(this.value) <= parseInt(this.max)){
     bempEnableNextBtn();
@@ -369,9 +369,9 @@ function bempGetUbication(){
 
 function bempSelectUbication(){
   if(this.value != 'Selecciona una opción'){
-    breadcrumb[7] = this.value;
+    bC[7] = this.value;
 
-    bempBreadcrumbs.innerHTML = breadcrumb[0]+' / '+breadcrumb[1]+' / '+breadcrumb[2]+' / '+breadcrumb[3]+' / '+breadcrumb[4]+' / '+breadcrumb[5]+' / '+breadcrumb[6]+' km'+' / '+breadcrumb[7];
+    bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4]+' / '+bC[5]+' / '+bC[6]+' km'+' / '+bC[7];
 
     bempEnableNextBtn();
   }else{
