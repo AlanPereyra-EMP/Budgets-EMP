@@ -6,8 +6,8 @@ var bempPrevBtn = document.getElementById('bemp-btn-prev');
 var bempNextBtn = document.getElementById('bemp-btn-next');
 
 
-// Define global variables
-var breadcrumb = [];
+// breadcrumbs
+var bC = [];
 
 // Increce or reduce de step number
 var bempSteps = [];

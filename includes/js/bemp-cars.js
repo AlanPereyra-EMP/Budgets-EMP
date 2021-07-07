@@ -282,6 +282,7 @@ function bempGetVersion(){
       path = path[Object.keys(path)];
       var top = bempSelected[5];
       var h1 = '¿Que versión de vehículo es?';
+      bempOptions.classList.remove('d-flex');
       bempGetOptions(data, path, h1, false, top, bempSelectVersion);
     });
 }

@@ -1,5 +1,4 @@
 #bemp-page{
-  background: var(--emp-head-title-bg);
   border-top: 80px solid transparent;
   height: 100vh;
   left: 0;
@@ -132,14 +131,6 @@
   color: var(--emp-btn-color)!important;
   right: 0;
 }
-@media(min-width:992px){
-  #bemp-btn-back{
-    left: 10%;
-  }
-  #bemp-btn-next{
-    right: 10%;
-  }
-}
 /* Animation fade in */
 .bemp-fade-in{
   -khtml-opacity: 0;
@@ -168,6 +159,9 @@ body {
   }
 }
 /* Empralidad-Theme support */
+article.content-background{
+  background: transparent!important;
+}
 #navbar-background{
   background: var(--emp-nav-bg)!important;
   transition: .3s all;
@@ -188,9 +182,6 @@ a#btn-searchform, a.fa-dark.fab.fa-whatsapp, .img-fixed {
 }
 .buttons-mobile{
   display: none!important;
-}
-.content-background {
-  background: transparent;
 }
 header{
   display: none;

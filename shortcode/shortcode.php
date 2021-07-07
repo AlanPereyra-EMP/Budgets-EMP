@@ -1,5 +1,5 @@
 <?php
-// [budgets-emp terms="https://link" poli="https://link"]
+// [budgets-emp type="cars" msj="Hello this is a final message" wsp="12345678"]
 if(!shortcode_exists('budgets-emp')) {
 
   function bemp_shortcode($atts) {
@@ -35,7 +35,6 @@ if(!shortcode_exists('budgets-emp')) {
     // Components
     return '<div style="height:100vh;"></div>
             <div id="bemp-page">
-              <div class="emp-background-image1"></div>
               <div id="bemp-div" class="bemp-fade-in" style="opacity:0;height:0">
                 <h1 id="bemp-h1" class="text-mobile"></h1>
                 <div id="bemp-breadcrumbs"></div>
