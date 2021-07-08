@@ -1,72 +1,87 @@
 {
   "aweClient": [
-    {"Selecciona una opción:": [
-      {"Para mí": [
-        {"": [
-          {"Vivo solo/a y no tengo quien me cuide": []},
-          {"Vivo solo/a pero si tengo quien me cuide": []},
-          {"Vivo con alguien que me cuida": []},
-          {"Vivo en una residencia/asilo con cuidadores": []}
-        ]}
+    {"": [
+      {"Para mi": [
+        {"Vivo solo/a y no tengo quien me cuide": []},
+        {"Vivo solo/a pero si tengo quien me cuide": []},
+        {"Vivo con alguien que me cuida": []},
+        {"Vivo en una residencia/asilo con cuidadores": []}
+      ]}
+    ]},
+    {"Familiar": [
+      {"Abuelo/a": [
+        {"Vive solo/a y se me complica cuidarlo": []},
+        {"Vive solo/a y tiene una persona que lo cuide": []},
+        {"Vive conmigo y puedo cuidarlo": []},
+        {"Vive conmigo pero se me complica cuidarlo/a": []},
+        {"Vive con otro familiar": []},
+        {"Está en una residencia/asilo con cuidadores": []}
       ]},
-      {"Un familiar": [
-        {"Abuelo/a": [
-          {"Vive solo/a y se me complica cuidarlo": []},
-          {"Vive solo/a y tiene una persona que lo cuide": []},
-          {"Vive conmigo y puedo cuidarlo": []},
-          {"Vive conmigo pero se me complica cuidarlo/a": []},
-          {"Vive con otro familiar": []},
-          {"Está en una residencia/asilo con cuidadores": []}
-        ]},
-        {"Padre/Madre": [
-          {"Vive solo/a y se me complica cuidarlo": []},
-          {"Vive solo/a y tiene una persona que lo cuide": []},
-          {"Vive conmigo y puedo cuidarlo": []},
-          {"Vive conmigo pero se me complica cuidarlo/a": []},
-          {"Vive con otro familiar": []},
-          {"Está en una residencia/asilo con cuidadores": []}
-        ]},
-        {"Cónyuge": [
-          {"Vive solo/a y se me complica cuidarlo": []},
-          {"Vive solo/a y tiene una persona que lo cuide": []},
-          {"Vive conmigo y puedo cuidarlo": []},
-          {"Vive conmigo pero se me complica cuidarlo/a": []},
-          {"Vive con otro familiar": []},
-          {"Está en una residencia/asilo con cuidadores": []}
-        ]},
-        {"Hermano/a": [
-          {"Vive solo/a y se me complica cuidarlo": []},
-          {"Vive solo/a y tiene una persona que lo cuide": []},
-          {"Vive conmigo y puedo cuidarlo": []},
-          {"Vive conmigo pero se me complica cuidarlo/a": []},
-          {"Vive con otro familiar": []},
-          {"Está en una residencia/asilo con cuidadores": []}
-        ]},
-        {"Hijo/a": [
-          {"Vive solo/a y se me complica cuidarlo": []},
-          {"Vive solo/a y tiene una persona que lo cuide": []},
-          {"Vive conmigo y puedo cuidarlo": []},
-          {"Vive conmigo pero se me complica cuidarlo/a": []},
-          {"Vive con otro familiar": []},
-          {"Está en una residencia/asilo con cuidadores": []}
-        ]},
-        {"Otro": [
-          {"Vive solo/a y se me complica cuidarlo": []},
-          {"Vive solo/a y tiene una persona que lo cuide": []},
-          {"Vive conmigo y puedo cuidarlo": []},
-          {"Vive conmigo pero se me complica cuidarlo/a": []},
-          {"Vive con su familia": []},
-          {"Está en una residencia/asilo con cuidadores": []}
-        ]}
+      {"Padre/Madre": [
+        {"Vive solo/a y se me complica cuidarlo": []},
+        {"Vive solo/a y tiene una persona que lo cuide": []},
+        {"Vive conmigo y puedo cuidarlo": []},
+        {"Vive conmigo pero se me complica cuidarlo/a": []},
+        {"Vive con otro familiar": []},
+        {"Está en una residencia/asilo con cuidadores": []}
       ]},
-      {"Un paciente/s, cliente o conocido": [
-        {"Es mi paciente médico": [
-          {"Desconosco su situación":[]},
-          {"Vive solo y no tiene quien lo cuide":[]},
-          {"Vive solo y no tiene quien lo cuide":[]}
-          ]},
-        {"Es huesped de mi residencia/asilo": []},
-        {"Simplemente es conocido ": []}
+      {"Cónyuge": [
+        {"Vive conmigo y puedo cuidarlo": []},
+        {"Vive conmigo pero se me complica cuidarlo/a": []}
+      ]},
+      {"Hermano/a": [
+        {"Vive solo/a y se me complica cuidarlo": []},
+        {"Vive solo/a y tiene una persona que lo cuide": []},
+        {"Vive conmigo y puedo cuidarlo": []},
+        {"Vive conmigo pero se me complica cuidarlo/a": []},
+        {"Vive con otro familiar": []},
+        {"Está en una residencia/asilo con cuidadores": []}
+      ]},
+      {"Hijo/a": [
+        {"Vive solo/a y se me complica cuidarlo": []},
+        {"Vive solo/a y tiene una persona que lo cuide": []},
+        {"Vive conmigo y puedo cuidarlo": []},
+        {"Vive conmigo pero se me complica cuidarlo/a": []},
+        {"Vive con otro familiar": []},
+        {"Está en una residencia/asilo con cuidadores": []}
+      ]},
+      {"Otro": [
+        {"Vive solo/a y se me complica cuidarlo": []},
+        {"Vive solo/a y tiene una persona que lo cuide": []},
+        {"Vive conmigo y puedo cuidarlo": []},
+        {"Vive conmigo pero se me complica cuidarlo/a": []},
+        {"Vive con su familia": []},
+        {"Está en una residencia/asilo con cuidadores": []}
+      ]}
+    ]},
+    {"Un paciente/s o cliente": [
+      {"Paciente": [
+        {"Desconosco su situación":[]},
+        {"Vive solo y no tiene quien lo/a cuide":[]},
+        {"Vive solo pero alguien lo/a cuida":[]},
+        {"Vive con alguien que lo/a cuida":[]}
+        ]},
+      {"Un huesped de mi residencia/asilo": [
+        {"Se aloja temporalmente y la familia lo retira": []},
+        {"Se aloja permanente y tenemos personal": []},
+        {"Se aloja permanente pero necesitamos personal": []}
+      ]}
+    ]},
+    {"Otro": [
+      {"Conocido ": [
+        {"Vive solo y no tiene quien lo/a cuide":[]},
+        {"Vive solo pero alguien lo/a cuida":[]},
+        {"Vive con alguien que lo/a cuida":[]}
+      ]},
+      {"Vecino ": [
+        {"Vive solo y no tiene quien lo/a cuide":[]},
+        {"Vive solo pero alguien lo/a cuida":[]},
+        {"Vive con alguien que lo/a cuida":[]}
+      ]},
+      {"Otro ": [
+        {"Vive solo y no tiene quien lo/a cuide":[]},
+        {"Vive solo pero alguien lo/a cuida":[]},
+        {"Vive con alguien que lo/a cuida":[]}
       ]}
     ]}
   ]

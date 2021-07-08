@@ -1,10 +1,24 @@
 {
   "aweMedicines": [
     {"Selecciona una opción:": [
-      {"Uso esporádico venta libre": []},
-      {"Uso esporádico con receta": []},
-      {"Medicación permanente venta libre": []},
-      {"Medicación permanente con receta": []}
+      {"Uso esporádico venta libre": [
+        {"": ""}
+      ]},
+      {"Uso esporádico con receta": [
+        {"": ""}
+      ]},
+      {"Medicación permanente venta libre": [
+        {"Todos los dias al mismo horario": []},
+        {"Una vez por semana": []},
+        {"Una vez por mes": []},
+        {"Según mi cuerpo lo necesite": []}
+      ]},
+      {"Medicación permanente con receta": [
+        {"Todos los dias al mismo horario": []},
+        {"Una vez por semana": []},
+        {"Una vez por mes": []},
+        {"Según mi cuerpo lo necesite": []}
+      ]}
     ]}
   ]
 }

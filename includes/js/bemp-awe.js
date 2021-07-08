@@ -1,10 +1,10 @@
 // Define the app steps functions
 bempSteps = [
   bempGetWho,
-  bempGetRelation,
   bempGetCompany,
   bempGetMedicines,
   bempGetFrequency,
+  bempSendResult
 ];
 
 function bempGetWho(){
@@ -19,7 +19,7 @@ function bempGetWho(){
 }
 bempGetWho();
 
-function bempGetRelation(){
+function bempGetCompany(){
 
   fetch(bempUrl+'/includes/json/awe/awe-client-profile.json')
     .then(data => data.json())
@@ -27,44 +27,21 @@ function bempGetRelation(){
       var path = data.aweClient[bempSelected[0]];
       path = path[Object.keys(path)];
       var top = bempSelected[1];
-      var h1 = '¿Qué relación tiene con la otra persona?';
+      var h1 = '¿Tiene compañía o algún cuidador/a?';
       bempGetOptions(data, path, h1, false, top, 1);
     });
-  if(bempSelected[1] == 0){
-    bempGetCompany();
-    bC[1] = ''
-    bempSelected[2] = 0;
-    bempStep++;
-    return;
-  }
 }
 
-function bempGetCompany(){
-  fetch(bempUrl+'/includes/json/awe/awe-client-profile.json')
-    .then(data => data.json())
-    .then(data => {
-      bempResetStepsOn();
-      var path = data.aweClient[bempSelected[0]];
-      path = path[Object.keys(path)];
-      path = path[bempSelected[1]];
-      path = path[Object.keys(path)];
-      var top = bempSelected[2];
-      var h1 = '¿Tiene compañía o algún cuidador/a?';
-      bempGetOptions(data, path, h1, false, top, 2);
-    });
-}
-
-var bempClientProfile = [];
+var aweClientData = [];
 function bempGetMedicines(){
-  for(var i = 0; i <= 3; i++){
-    bempClientProfile[i] = bempSelected[i];
+  for(var i = 0; i < 3; i++){
+    aweClientData[i] = bempSelected[i];
   }
-  console.log(bempClientProfile);
 
   fetch(bempUrl+'/includes/json/awe/awe-medicines.json')
   .then(data => data.json())
   .then(data => {
-    bempEnablePrevBtn();
+    bempResetStepsOn();
     var path = data.aweMedicines;
     var h1 = '¿Qué tipo de medicamentos necesita?';
     bempGetOptions(data, path, h1, true, '', 0);
@@ -75,10 +52,19 @@ function bempGetFrequency(){
   fetch(bempUrl+'/includes/json/awe/awe-medicines.json')
   .then(data => data.json())
   .then(data => {
+    bempResetStepsOff();
     var path = data.aweMedicines[bempSelected[0]];
     path = path[Object.keys(path)];
     var top = bempSelected[1];
-    var h1 = '¿Con que frecuencia toma sus medicamentos?';
+    var h1 = 'Frecuencia...';
     bempGetOptions(data, path, h1, false, top, 1);
   });
+}
+
+var aweMedicineData = [];
+function bempSendResult(){
+  for(var i = 3; i <= 5; i++){
+    aweMedicineData[i] = bempSelected[i-3];
+  }
+  console.log(aweClientData+aweMedicineData);
 }

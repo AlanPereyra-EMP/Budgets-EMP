@@ -30,6 +30,9 @@ function bempNextStep(){
 function bempResetStepsOn(){
   bempResetStep = true;
 }
+function bempResetStepsOff(){
+  bempResetStep = false;
+}
 
 // Execute actual step
 function bempActualStep(){
