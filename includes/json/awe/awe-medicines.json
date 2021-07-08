@@ -1,0 +1,10 @@
+{
+  "aweMedicines": [
+    {"Selecciona una opción:": [
+      {"Uso esporádico venta libre": []},
+      {"Uso esporádico con receta": []},
+      {"Medicación permanente venta libre": []},
+      {"Medicación permanente con receta": []}
+    ]}
+  ]
+}
