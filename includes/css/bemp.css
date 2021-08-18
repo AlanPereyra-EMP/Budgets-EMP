@@ -15,7 +15,9 @@
 }
 #bemp-h1{
   align-items: center;
+  color: var(--emp-head-title-color);
   display: flex;
+  font-family: var(--emp-head-title-tipography), 'sans-serif';
   height: 20%;
   margin: 0;
   justify-content: center;
@@ -38,6 +40,7 @@
 @media(min-width:992px){
   #bemp-h1{
     height: 33%;
+    font-size: 60px;
   }
   #bemp-breadcrumbs{
     height: 3%;

@@ -2,10 +2,12 @@
   "aweMedicines": [
     {"Selecciona una opción:": [
       {"Uso esporádico venta libre": [
-        {"": ""}
+        {"Uso intermitente": []},
+        {"Solo una vez": []}
       ]},
       {"Uso esporádico con receta": [
-        {"": ""}
+        {"Uso intermitente": []},
+        {"Solo una vez": []}
       ]},
       {"Medicación permanente venta libre": [
         {"Todos los dias al mismo horario": []},
