@@ -181,7 +181,7 @@ function bempSendResult(){
 
   msj = msj.replace(/ /g,'%20');
   bempMsj = bempMsj.replace(/ /g,'%20');
-  var url = 'Enviado desde: '+window.location.href;
+  var url = 'Enviado%20desde:%20'+window.location.href;
   var link = 'https://api.whatsapp.com/send?phone='+bempWsp+'&text='+bempMsj+'%0A%0A'+msj+'%0A%0A'+url;
   window.location.href = link;
 }
