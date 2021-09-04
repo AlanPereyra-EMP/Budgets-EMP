@@ -12,19 +12,19 @@ bempSteps = [
 ];
 
 function bempGetBrands(){
-  fetch(bempUrl+'/includes/json/vehicles.json')
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       bempDisablePrevBtn();
       var path = data.vehiculos;
-      var h1 = '¿De que marca es tu vehículo?';
+      var h1 = '¿De que marca es el vehículo que querés cambiar/vender ?';
       bempGetOptions(data, path, h1, true, '', 0);
     });
 }
 bempGetBrands();
 
 function bempGetModel(){
-  fetch(bempUrl+'/includes/json/vehicles.json')
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       var path = data.vehiculos[bempSelected[0]];
@@ -36,7 +36,7 @@ function bempGetModel(){
 }
 
 function bempGetTransmition(){
-  fetch(bempUrl+'/includes/json/vehicles.json')
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       var path = data.vehiculos[bempSelected[0]];
@@ -50,7 +50,7 @@ function bempGetTransmition(){
 }
 
 function bempGetEngine(){
-  fetch(bempUrl+'/includes/json/vehicles.json')
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       var path = data.vehiculos[bempSelected[0]];
@@ -66,7 +66,7 @@ function bempGetEngine(){
 }
 
 function bempGetType(){
-  fetch(bempUrl+'/includes/json/vehicles.json')
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       var path = data.vehiculos[bempSelected[0]];
@@ -84,7 +84,7 @@ function bempGetType(){
 }
 
 function bempGetVersion(){
-  fetch(bempUrl+'/includes/json/vehicles.json')
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       var path = data.vehiculos[bempSelected[0]];
@@ -179,9 +179,9 @@ function bempSendResult(){
   msj += '*Kilometros: '+bC[6]+'*%0A%0A';
   msj += '*Ubicación: '+bC[7]+'*%0A%0A';
 
-  msj = msj..replace(/ /g,'%20');
+  msj = msj.replace(/ /g,'%20');
   bempMsj = bempMsj.replace(/ /g,'%20');
-  var url = window.location.href;
+  var url = 'Enviado desde: '+window.location.href;
   var link = 'https://api.whatsapp.com/send?phone='+bempWsp+'&text='+bempMsj+'%0A%0A'+msj+'%0A%0A'+url;
   window.location.href = link;
 }
