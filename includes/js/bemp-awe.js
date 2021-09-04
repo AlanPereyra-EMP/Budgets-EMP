@@ -62,6 +62,8 @@ function bempWhichMedicines(){
 function bempWhichFrequency(){
   whichMedicines = bC[0];
 
+  bempOptions.classList.remove('d-flex');
+
   fetch(bempUrl+'/includes/json/awe/awe-client-medicines.json')
   .then(data => data.json())
   .then(data => {
