@@ -1,0 +1,22 @@
+{
+  "aweMedicines": [
+    {"Selecciona una opción:": [
+      {"Venta libre": [
+        {"Todos los dias al mismo horario": []},
+        {"Una o varias veces por semana": []},
+        {"Una o varias veces por mes": []},
+        {"Solo una vez": []},
+        {"Varian según la necesidad": []},
+        {"Uso indefinido": []}
+      ]},
+      {"Venta con receta": [
+        {"Todos los dias al mismo horario": []},
+        {"Una o varias veces por semana": []},
+        {"Una o varias veces por mes": []},
+        {"Solo una vez": []},
+        {"Varian según la necesidad": []},
+        {"Uso indefinido": []}
+      ]}
+    ]}
+  ]
+}

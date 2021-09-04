@@ -1,9 +1,9 @@
 {
   "aweClient": [
     {"Personal": [
-      {"Para mi": [
+      {"Yo mismo/a": [
         {"Vivo solo/a y no tengo quien me cuide": []},
-        {"Vivo solo/a pero si tengo quien me cuide": []},
+        {"Vivo solo/a y si tengo quien me cuide": []},
         {"Vivo con alguien que me cuida": []},
         {"Vivo en una residencia/asilo con cuidadores": []}
       ]}
@@ -63,8 +63,8 @@
         ]},
       {"Un huesped de mi residencia/asilo": [
         {"Se aloja temporalmente y la familia lo retira": []},
-        {"Se aloja permanente y tenemos personal": []},
-        {"Se aloja permanente pero necesitamos personal": []}
+        {"Se aloja permanente y tenemos personal que lo/a atiende": []},
+        {"Se aloja permanente pero no tenemos personal suficiente": []}
       ]}
     ]},
     {"Otro": [

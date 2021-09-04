@@ -170,15 +170,16 @@ function bempGetUbication(){
 
 function bempSendResult(){
   var msj = '';
-  msj += '*Marca: '+bC[0].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Modelo: '+bC[1].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Motorización: '+bC[2].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Transmisión: '+bC[3].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Tipo: '+bC[4].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Version: '+bC[5].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Kilometros: '+bC[6].replace(/ /g,'%20')+'*%0A%0A';
-  msj += '*Ubicación: '+bC[7].replace(/ /g,'%20')+'*%0A%0A';
+  msj += '*Marca: '+bC[0]+'*%0A%0A';
+  msj += '*Modelo: '+bC[1]+'*%0A%0A';
+  msj += '*Motorización: '+bC[2]+'*%0A%0A';
+  msj += '*Transmisión: '+bC[3]+'*%0A%0A';
+  msj += '*Tipo: '+bC[4]+'*%0A%0A';
+  msj += '*Version: '+bC[5]+'*%0A%0A';
+  msj += '*Kilometros: '+bC[6]+'*%0A%0A';
+  msj += '*Ubicación: '+bC[7]+'*%0A%0A';
 
+  msj = msj..replace(/ /g,'%20');
   bempMsj = bempMsj.replace(/ /g,'%20');
   var url = window.location.href;
   var link = 'https://api.whatsapp.com/send?phone='+bempWsp+'&text='+bempMsj+'%0A%0A'+msj+'%0A%0A'+url;
