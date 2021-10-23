@@ -8,6 +8,7 @@ bempSteps = [
   bempSendResult
 ];
 
+// Define all local variables
 var aweClientData = [];
 var aweMedicineData = [];
 var whoIs = '';

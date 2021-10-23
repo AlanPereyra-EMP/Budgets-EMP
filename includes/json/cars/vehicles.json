@@ -1,215 +1,885 @@
 {
   "vehiculos": [
-    {"Populares": [
-      {"Chevrolet": [
-        {"Agile": [
-          {"Nafta": [
-            {"Manual" : [
-              {"Hatchback (5 puertas)" : [
-                {"1.4 Ls Aa+da+mp3" : ""},
-                {"1.4 Ltz" : ""}
-              ]}
-            ]}
-          ]},
-          {"Nafta + GNC": [
-            {"Manual" : [
-              {"Hatchback (5 puertas)" : [
-                {"1.4 Ls Aa+da+mp3" : ""},
-                {"1.4 Ltz" : ""}
-              ]}
-            ]}
-          ]}
-        ]},
-        {"Astra": [
-          {"Nafta": [
-            {"Manual" : [
-              {"Sedán (4 puertas)" : [
-                {"2.0 Gls" : ""}
-              ]}
-            ]}
-          ]},
-          {"Nafta + GNC": [
-            {"Manual" : [
-              {"Sedán (4 puertas)" : [
-                {"2.0 Gls" : ""}
-              ]}
-            ]}
-          ]}
-        ]},
-        {"Aveo": [
-          {"Nafta": [
-            {"Automática" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Lt At" : ""}
-              ]}
-            ]},
-            {"Manual" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Ls" : ""},
-                {"1.6 Lt" : ""}
-              ]}
-            ]}
-          ]},
-          {"Nafta + GNC": [
-            {"Automática" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Lt At" : ""}
+    {"": [
+      {"2021": [
+
+      ]},
+      {"2020": [
+
+      ]},
+      {"2019": [
+
+      ]},
+      {"2018": [
+
+      ]},
+      {"2017": [
+
+      ]},
+      {"2016": [
+
+      ]},
+      {"2015": [
+
+      ]},
+      {"2014": [
+
+      ]},
+      {"2013": [
+
+      ]},
+      {"2012": [
+
+      ]},
+      {"2011": [
+
+      ]},
+      {"2010": [
+        {"Chevrolet": [
+          {"Agile": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Ls Aa+da+mp3" : ""}
+                ]}
               ]}
             ]},
-            {"Manual" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Ls" : ""},
-                {"1.6 Lt" : ""}
-              ]}
-            ]}
-          ]}
-        ]},
-        {"Aveo G3": [
-          {"Nafta": [
-            {"Automática" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Lt At" : ""}
-              ]}
-            ]},
-            {"Manual" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Ls" : ""},
-                {"1.6 Lt" : ""}
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Ls Aa+da+mp3" : ""}
+                ]}
               ]}
             ]}
           ]},
-          {"Nafta + GNC": [
-            {"Automática" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Lt At" : ""}
+          {"Astra": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Gl" : ""},
+                  {"2.0 Gls" : ""}
+                ]}
               ]}
             ]},
-            {"Manual" : [
-              {"Sedán (4 puertas)" : [
-                {"1.6 Ls" : ""},
-                {"1.6 Lt" : ""}
-              ]}
-            ]}
-          ]}
-        ]},
-        {"Captiva": [
-          {"Automática": [
-            {"Diesel" : [
-              {"SUV (5 puertas)" : [
-                {"2.0 Vcdi Ltz At" : ""},
-                {"2.0 Ltz Awd D 184cv At" : ""}
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Gl" : ""},
+                  {"2.0 Gls" : ""}
+                ]}
               ]}
             ]}
           ]},
-          {"Manual": [
-            {"Nafta" : [
-              {"SUV (5 puertas)" : [
-                {"2.4 Lt Mt" : ""},
-                {"2.4 Lt Mt Awd 167cv" : ""}
+          {"Aveo": [
+            {"Nafta": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt At" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt At" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Aveo G3": [
+            {"Nafta": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt At" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt At" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Lt" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Blazer": [
+            {"Manual": [
+              {"Nafta" : [
+                {"SUV (5 puertas)" : [
+                  {"2.8 Cdoble Dlx 4x2 Electronico" : ""},
+                  {"2.8 Cdoble Dlx 4x4 Electronico" : ""}
+                ]}
+              ]},
+              {"Nafta + GNC" : [
+                {"SUV (5 puertas)" : [
+                  {"2.8 Cdoble Dlx 4x2 Electronico" : ""},
+                  {"2.8 Cdoble Dlx 4x4 Electronico" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Captiva": [
+            {"Diesel": [
+              {"Automática" : [
+                {"SUV (5 puertas)" : [
+                  {"2.0 Vcdi Ltz At" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"SUV (5 puertas)" : [
+                  {"2.0 Vcdi Ltz Mt" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Manual" : [
+                {"SUV (5 puertas)" : [
+                  {"2.4 Lt Mt" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"SUV (5 puertas)" : [
+                  {"2.4 Lt Mt" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Classic": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Furgón (3 puertas)" : [
+                  {"1.4 Cargo" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"1.4 Ls Pack" : ""},
+                  {"1.4 Lt Pack" : ""},
+                  {"1.4 Lt Spirit" : ""}
+                ]},
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Aa+da" : ""}
+                ]},
+                {"Rural (5 puertas)" : [
+                  {"1.4 Wagon Ls" : ""},
+                  {"1.4 Wagon Lt" : ""}
+                ]}
               ]}
             ]},
             {"Nafta + GNC" : [
-              {"SUV (5 puertas)" : [
-                {"2.4 Lt Mt" : ""},
-                {"2.4 Lt Mt Awd 167cv" : ""}
+              {"Manual" : [
+                {"Furgón (3 puertas)" : [
+                  {"1.4 Cargo" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"1.4 Ls Pack" : ""},
+                  {"1.4 Lt Pack" : ""},
+                  {"1.4 Lt Spirit" : ""}
+                ]},
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Aa+da" : ""}
+                ]},
+                {"Rural (5 puertas)" : [
+                  {"1.4 Wagon Ls" : ""},
+                  {"1.4 Wagon Lt" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Meriva": [
+            {"Nafta" : [
+              {"Automática" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.8 Gls Easytronic" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.8 Gl Aa+da" : ""},
+                  {"1.8 Gl Plus" : ""},
+                  {"1.8 Gl" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC" : [
+              {"Automática" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.8 Gls Easytronic" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.8 Gl Aa+da" : ""},
+                  {"1.8 Gl Plus" : ""},
+                  {"1.8 Gl" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"S10": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Pick-Up (2 puertas)" : [
+                  {"2.8 G4 Cs 4x2 Electronico" : ""}
+                ]},
+                {"Pick-Up (4 puertas)" : [
+                  {"2.8 G4 Cd 4x2 Electronico" : ""},
+                  {"2.8 G4 Cd 4x4 Electronico" : ""},
+                  {"2.8 G4 Cd Dlx 4x2 Electronico" : ""},
+                  {"2.8 G4 Cd Dlx 4x4 Electronico" : ""},
+                  {"2.8 G4 Cd L 4x4 Electronico" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Spark": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (3 puertas)" : [
+                  {"1.0 Ls" : ""},
+                  {"1.0 Lt" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (3 puertas)" : [
+                  {"1.0 Ls" : ""},
+                  {"1.0 Lt" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Vectra": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.4 Gt Cd" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.4 Cd" : ""},
+                  {"2.4 Gls" : ""}
+                ]}
+              ]},
+              {"Automática" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.4 Gt Cd At" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.4 Cd At" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.4 Gt Cd" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.4 Cd" : ""},
+                  {"2.4 Gls" : ""}
+                ]}
+              ]},
+              {"Automática" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.4 Gt Cd At" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.4 Cd At" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Zafira": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 Gl" : ""},
+                  {"2.0 Gls" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 Gl" : ""},
+                  {"2.0 Gls" : ""}
+                ]}
               ]}
             ]}
           ]}
         ]},
-        {"Camaro": [
-          {"Manual" : [
-            {"Cabriolet (2 puertas)" : [
-              {"6.2 Convertible SS V8" : ""}
+        {"Citroën": [
+          {"Berlingo": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Furgón (3 puertas)" : [
+                  {"1.6 Hdi 92cv Pack Seguridad" : ""},
+                  {"1.6 Hdi Am52" : ""},
+                  {"1.6 Hdi Am52 Seguridad" : ""},
+                  {"1.6 Hdi Plc Am52" : ""},
+                  {"1.6 Pack Plc Hdi 92cv Am53" : ""},
+                  {"1.9 D 3 p" : ""},
+                  {"1.9 D Plc" : ""}
+                ]},
+                {"Furgón (5 puertas)" : [
+                  {"1.6 Sx Hdi 92cv Am53" : ""},
+                  {"1.6 Sx Hdi Am51" : ""},
+                  {"1.6 Sx Pack Hdi 92cv Am53" : ""},
+                  {"1.6 Sx Pack Hdi Am51" : ""},
+                  {"1.9 D 5 p" : ""},
+                  {"1.9 D Pack" : ""}
+                ]}
+              ]}
             ]},
-            {"Coupé (2 puertas)" : [
-              {"6.2 Coupé SS V8" : ""}
+            {"Nafta": [
+              {"Manual" : [
+                {"Furgón (5 puertas)" : [
+                  {"1.4 Aa" : ""},
+                  {"1.6 Sx 110cv Am53" : ""},
+                  {"1.6 Sx Am51" : ""},
+                  {"1.6 Sx Pack 110cv Am53" : ""},
+                  {"1.6 Sx Pack Am51" : ""},
+                  {"1.6 X 110cv Am53" : ""},
+                  {"1.6 X Am52" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Furgón (5 puertas)" : [
+                  {"1.4 Aa" : ""},
+                  {"1.6 Sx 110cv Am53" : ""},
+                  {"1.6 Sx Am51" : ""},
+                  {"1.6 Sx Pack 110cv Am53" : ""},
+                  {"1.6 Sx Pack Am51" : ""},
+                  {"1.6 X 110cv Am53" : ""},
+                  {"1.6 X Am52" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"C3": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Hdi Exclusive Facelift" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 I Sx Facelift" : ""},
+                  {"1.4 I Xtr Facelift" : ""},
+                  {"1.6 I Exclusive Facelift" : ""},
+                  {"1.6 I Sx" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 I Sx Facelift" : ""},
+                  {"1.4 I Xtr Facelift" : ""},
+                  {"1.6 I Exclusive Facelift" : ""},
+                  {"1.6 I Sx" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"C4": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.0 Hdi Sx Am71" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Hdi Exclusive Am70" : ""},
+                  {"2.0 Hdi Sx Am70" : ""},
+                  {"2.0 Hdi X Am70" : ""},
+                  {"2.0 Sedan Hdi Exclusive" : ""},
+                  {"2.0 Sedan Hdi Sx" : ""},
+                  {"2.0 Sedan Hdi Sx Am70" : ""},
+                  {"2.0 Sedan Hdi Sx Am71" : ""},
+                  {"2.0 Sedan Hdi Sx Cuero Am71" : ""},
+                  {"2.0 Sedan Hdi Sx Sin Sensor Tras" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Automática" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.0 Exclusive Bva Am71" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Bva Exclusive Am70" : ""},
+                  {"2.0 Sedan Bva Exclusive Am70" : ""},
+                  {"2.0 Sedan Bva Exclusive Am71" : ""},
+                  {"2.0 Sedan Sx Bva" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.6 X Am71" : ""},
+                  {"2.0 Exclusive Am71" : ""},
+                  {"2.0 Sx Am71" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Am70" : ""},
+                  {"1.6 Sedan X" : ""},
+                  {"1.6 X Am70" : ""},
+                  {"2.0 Exclusive Am70" : ""},
+                  {"2.0 Sedan Exclusive" : ""},
+                  {"2.0 Sedan Exclusive Am70" : ""},
+                  {"2.0 Sedan Exclusive Plus" : ""},
+                  {"2.0 Sedan Sx" : ""},
+                  {"2.0 Sedan Sx Am70" : ""},
+                  {"2.0 Sedan Sx Am71" : ""},
+                  {"2.0 Sedan Sx Cuero Am71" : ""},
+                  {"2.0 Sx Am70" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Automática" : [
+                {"Hatchback (5 puertas)" : [
+                  {"2.0 Exclusive Bva Am71" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Bva Exclusive Am70" : ""},
+                  {"2.0 Sedan Bva Exclusive Am70" : ""},
+                  {"2.0 Sedan Bva Exclusive Am71" : ""},
+                  {"2.0 Sedan Sx Bva" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.6 X Am71" : ""},
+                  {"2.0 Exclusive Am71" : ""},
+                  {"2.0 Sx Am71" : ""}
+                ]},
+                {"Sedán (4 puertas)" : [
+                  {"1.6 Am70" : ""},
+                  {"1.6 Sedan X" : ""},
+                  {"1.6 X Am70" : ""},
+                  {"2.0 Exclusive Am70" : ""},
+                  {"2.0 Sedan Exclusive" : ""},
+                  {"2.0 Sedan Exclusive Am70" : ""},
+                  {"2.0 Sedan Exclusive Plus" : ""},
+                  {"2.0 Sedan Sx" : ""},
+                  {"2.0 Sedan Sx Am70" : ""},
+                  {"2.0 Sedan Sx Am71" : ""},
+                  {"2.0 Sedan Sx Cuero Am71" : ""},
+                  {"2.0 Sx Am70" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"C4 Picasso": [
+            {"Diesel": [
+              {"Automática" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 Bva 143cv" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.6 Hdi 110cv Con Sensor Tras" : ""},
+                  {"1.6 Hdi 110cv Sin Sensor Tras" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"C5": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Hdi Confort" : ""},
+                  {"2.0 Hdi Dynamique" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"3.0 V6 Exclusive" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Dynamique" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"3.0 V6 Exclusive" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"2.0 Dynamique" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Grand Picasso": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.6 C4 Hdi" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Automática" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 C4 Bva 138cv" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Automática" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 C4 Bva 138cv" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Jumper": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Furgón (3 puertas)" : [
+                  {"2.3 Hdi Alto Furgon" : ""},
+                  {"2.3 Hdi Pack Furgon" : ""},
+                  {"2.8 Hdi Furgon" : ""},
+                  {"2.8 Hdi Pack Furgon Abs" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Xsara Picasso": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 Fase2 Hdi Exclusive" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Automática" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"2.0 Fase2 I Exclusiv 138cv Bva" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.6 Fase2 I" : ""},
+                  {"1.6 Fase2 I Exclusive" : ""},
+                  {"2.0 Fase2 I Exclusiv 138cv" : ""}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Fiat": [
+          {"500": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (3 puertas)" : [
+                  {"1.4 Fire" : ""},
+                  {"1.4 Fire 90 Aniversario" : ""},
+                  {"1.4 Fire By Gucci" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (3 puertas)" : [
+                  {"1.4 Fire" : ""},
+                  {"1.4 Fire 90 Aniversario" : ""},
+                  {"1.4 Fire By Gucci" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Ducato": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Furgón (5 puertas)" : [
+                  {"2.3 Economy Combinato Mjet" : ""},
+                  {"2.3 Economy Furgon Mjet 1 Te" : ""},
+                  {"2.3 Economy Furgon Mjet 1 Tn" : ""},
+                  {"2.3 Economy Maxicargo Mjet Te" : ""},
+                  {"2.8 Combinato" : ""},
+                  {"2.8 Furgon 1 Te" : ""},
+                  {"2.8 Furgon 1 Tn" : ""},
+                  {"2.8 Furgon Maxicargo T.e." : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Fiorino": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Furgón (3 puertas)" : [
+                  {"1.3 Fire" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Furgón (3 puertas)" : [
+                  {"1.3 Fire" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Idea": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.4 Elx Mp3" : ""},
+                  {"1.8 Adventure" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.4 Elx Mp3" : ""},
+                  {"1.8 Adventure" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Linea": [
+            {"Nafta": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.9 Absolute Dualogic" : ""},
+                  {"1.9 Essence Dualogic" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.9 Absolute" : ""},
+                  {"1.9 Essence" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Automática" : [
+                {"Sedán (4 puertas)" : [
+                  {"1.9 Absolute Dualogic" : ""},
+                  {"1.9 Essence Dualogic" : ""}
+                ]}
+              ]},
+              {"Manual" : [
+                {"Monovolumen (5 puertas)" : [
+                  {"1.4 Elx Mp3" : ""},
+                  {"1.8 Adventure" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Palio": [
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Elx" : ""},
+                  {"1.4 Elx Active" : ""},
+                  {"1.4 Elx Active Alarma" : ""},
+                  {"1.4 Elx Emotion" : ""},
+                  {"1.4 Elx Emotion Alarma" : ""},
+                  {"1.4 Elx Groove" : ""},
+                  {"1.4 Fire" : ""},
+                  {"1.4 Fire Confort" : ""},
+                  {"1.4 Fire Top Aa+da+pl+ll" : ""},
+                  {"1.8 R" : ""}
+                ]},
+                {"Rural (5 puertas)" : [
+                  {"1.4 Weekend 2009 Elx" : ""},
+                  {"1.4 Weekend 2009 Elx Pack Active Ii" : ""},
+                  {"1.4 Weekend Trekking" : ""},
+                  {"1.6 Adventure Etorque" : ""},
+                  {"1.8 Adventure Locker" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Elx" : ""},
+                  {"1.4 Elx Active" : ""},
+                  {"1.4 Elx Active Alarma" : ""},
+                  {"1.4 Elx Emotion" : ""},
+                  {"1.4 Elx Emotion Alarma" : ""},
+                  {"1.4 Elx Groove" : ""},
+                  {"1.4 Fire" : ""},
+                  {"1.4 Fire Confort" : ""},
+                  {"1.4 Fire Top Aa+da+pl+ll" : ""},
+                  {"1.8 R" : ""}
+                ]},
+                {"Rural (5 puertas)" : [
+                  {"1.4 Weekend 2009 Elx" : ""},
+                  {"1.4 Weekend 2009 Elx Pack Active Ii" : ""},
+                  {"1.4 Weekend Trekking" : ""},
+                  {"1.6 Adventure Etorque" : ""},
+                  {"1.8 Adventure Locker" : ""}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"Punto": [
+            {"Diesel": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.3 Elx Top Multijet" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Attractive" : ""},
+                  {"1.4 Elx" : ""},
+                  {"1.8 Hlx" : ""}
+                ]}
+              ]}
+            ]},
+            {"Nafta + GNC": [
+              {"Manual" : [
+                {"Hatchback (5 puertas)" : [
+                  {"1.4 Attractive" : ""},
+                  {"1.4 Elx" : ""},
+                  {"1.8 Hlx" : ""}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Siena": [
+          {"Nafta": [
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"1.4 2008 Fire El Rstii" : ""},
+                {"1.4 Fire Da" : ""},
+                {"1.4 Fire Elx Active Rstii" : ""},
+                {"1.4 Fire Way" : ""},
+                {"1.8 2008 Hlx Emotion" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Manual" : [
+              {"Sedán (4 puertas)" : [
+                {"1.4 2008 Fire El Rstii" : ""},
+                {"1.4 Fire Da" : ""},
+                {"1.4 Fire Elx Active Rstii" : ""},
+                {"1.4 Fire Way" : ""},
+                {"1.8 2008 Hlx Emotion" : ""}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Stilo": [
+          {"Nafta": [
+            {"Manual" : [
+              {"Hatchback (5 puertas)" : [
+                {"1.8 Active 2009" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Manual" : [
+              {"Hatchback (5 puertas)" : [
+                {"1.8 Active 2009" : ""}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Strada": [
+          {"Diesel": [
+            {"Manual" : [
+              {"Pick-Up (2 puertas)" : [
+                {"1.3 Mjet Trekking Ce" : ""},
+                {"1.3 Mjet Trekking Cs" : ""},
+                {"1.3 Mjet Trekking Cs + Aa" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta": [
+            {"Manual" : [
+              {"Pick-Up (2 puertas)" : [
+                {"1.4 Trekking" : ""},
+                {"1.4 Working" : ""},
+                {"1.4 Working Cs Aa" : ""},
+                {"1.6 Adventure Ce C/alarma" : ""},
+                {"1.6 Adventure Ce C/alarma + Lona" : ""},
+                {"1.8 Adventure Cab Ex C/alarma" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Manual" : [
+              {"Pick-Up (2 puertas)" : [
+                {"1.4 Trekking" : ""},
+                {"1.4 Working" : ""},
+                {"1.4 Working Cs Aa" : ""},
+                {"1.6 Adventure Ce C/alarma" : ""},
+                {"1.6 Adventure Ce C/alarma + Lona" : ""},
+                {"1.8 Adventure Cab Ex C/alarma" : ""}
+              ]}
+            ]}
+          ]}
+        ]},
+        {"Uno": [
+          {"Nafta": [
+            {"Manual" : [
+              {"Furgón (3 puertas)" : [
+                {"1.3 Cargo Fire" : ""}
+              ]},
+              {"Hatchback (5 puertas)" : [
+                {"1.3 Fire Way" : ""}
+              ]}
+            ]}
+          ]},
+          {"Nafta + GNC": [
+            {"Manual" : [
+              {"Furgón (3 puertas)" : [
+                {"1.3 Cargo Fire" : ""}
+              ]},
+              {"Hatchback (5 puertas)" : [
+                {"1.3 Fire Way" : ""}
+              ]}
             ]}
           ]}
         ]}
-      ]},
-      {"Citroën": [
-        {"Berlingo": {}},
-        {"C-Elysée": {}},
-        {"C3": {}},
-        {"C3 Aircross": {}},
-        {"C4": {}},
-        {"C4 Cactus": {}},
-        {"C4 Picasso": {}},
-        {"C4 Spacetourer": {}},
-        {"Grand C4 Picasso": {}},
-        {"Grand C4 Spacetourer": {}},
-        {"Jumper": {}},
-        {"Jumpy": {}},
-        {"Spacetourer": {}}
-      ]},
-      {"Fiat": {
-        "500": {},
-        "500 x": {},
-        "Argo": {},
-        "Cronos": {},
-        "Docló Cargo": {},
-        "Ducato": {},
-        "Fiorino": {},
-        "Grand Siena": {},
-        "Idea": {},
-        "Linea": {},
-        "Mobi": {},
-        "Strada": {},
-        "Tipo": {},
-        "Toro": {},
-        "Uno": {}
-      }},
-      {"Ford": {}},
-      {"Honda": {}},
-      {"Nissan": {}},
-      {"Peugeot": {}},
-      {"Ranault": {}},
-      {"Toyota": {}},
-      {"Volkswagen": {}}
-    ]},
-    {"Otros": [
-      {"Alfa Romeo": [
-        {"Camaro": [
-          {"Manual" : [
-            {"Cabriolet (2 puertas)" : [
-              {"6.2 Convertible SS V8" : ""}
-            ]},
-            {"Coupé (2 puertas)" : [
-              {"6.2 Coupé SS V8" : ""}
-            ]}
-          ]}
-        ]}
-      ]},
-      {"BIAC": {}},
-      {"BMW": {}},
-      {"Changan": {}},
-      {"Chery": {}},
-      {"DFSK": {}},
-      {"DS": {}},
-      {"Dodge": {}},
-      {"Great Wall": {}},
-      {"Haval": {}},
-      {"Hyundai": {}},
-      {"Iveco": {}},
-      {"JAC": {}},
-      {"Jaguar": {}},
-      {"Jeep": {}},
-      {"Kia": {}},
-      {"KyC": {}},
-      {"Land Rover": {}},
-      {"Lexus": {}},
-      {"Lifan": {}},
-      {"Maserati": {}},
-      {"Mercedes Benz": {}},
-      {"Mini": {}},
-      {"Mitsibishi": {}},
-      {"Porche": {}},
-      {"Ram": {}},
-      {"Shineray": {}},
-      {"Smart": {}},
-      {"Sabaru": {}},
-      {"Susuki": {}},
-      {"Volvo": {}}
+
+      ]}
     ]}
   ]
 }

@@ -1,9 +1,10 @@
 // Define the app steps functions
 bempSteps = [
+  bempGetYear,
   bempGetBrands,
   bempGetModel,
-  bempGetTransmition,
   bempGetEngine,
+  bempGetTransmition,
   bempGetType,
   bempGetVersion,
   bempGetKilometers,
@@ -11,31 +12,46 @@ bempSteps = [
   bempSendResult
 ];
 
-function bempGetBrands(){
+// Define all local variables
+var carYear = '';
+var carBrand = '';
+var carModel = '';
+var carEngine = '';
+var carTransmition = '';
+var carType = '';
+var carVersion = '';
+var carKilometers = '';
+var carUbication = '';
+
+function bempGetYear(){
   fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       bempDisablePrevBtn();
       var path = data.vehiculos;
-      var h1 = '¿De que marca es el vehículo que querés cambiar/vender ?';
+      var h1 = '¿De qué año es el vehículo?';
       bempGetOptions(data, path, h1, true, '', 0);
     });
 }
-bempGetBrands();
+bempGetYear();
 
-function bempGetModel(){
+function bempGetBrands(){
+  carYear = bC[0];
+
   fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
       var path = data.vehiculos[bempSelected[0]];
       path = path[Object.keys(path)];
       var top = bempSelected[1];
-      var h1 = '¿De que modelo es tu vehículo?';
+      var h1 = '¿De qué marca es?';
       bempGetOptions(data, path, h1, false, top, 1);
     });
 }
 
-function bempGetTransmition(){
+function bempGetModel(){
+  carBrand = bC[1];
+
   fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
@@ -44,12 +60,14 @@ function bempGetTransmition(){
       path = path[bempSelected[1]];
       path = path[Object.keys(path)];
       var top = bempSelected[2];
-      var h1 = '¿Que tipo de transmisión tiene?';
+      var h1 = '¿Cuál es el modelo?';
       bempGetOptions(data, path, h1, false, top, 2);
     });
 }
 
 function bempGetEngine(){
+  carModel = bC[2];
+
   fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
@@ -60,12 +78,14 @@ function bempGetEngine(){
       path = path[bempSelected[2]];
       path = path[Object.keys(path)];
       var top = bempSelected[3];
-      var h1 = '¿Que tipo de motorización tiene?';
+      var h1 = '¿Qué tipo de motor tiene?';
       bempGetOptions(data, path, h1, false, top, 3);
     });
 }
 
-function bempGetType(){
+function bempGetTransmition(){
+  carEngine = bC[3];
+
   fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
@@ -78,12 +98,14 @@ function bempGetType(){
       path = path[bempSelected[3]];
       path = path[Object.keys(path)];
       var top = bempSelected[4];
-      var h1 = '¿Que tipo de vehículo es?';
+      var h1 = '¿Que transmisión tiene?';
       bempGetOptions(data, path, h1, false, top, 4);
     });
 }
 
-function bempGetVersion(){
+function bempGetType(){
+  carTransmition = bC[4];
+
   fetch(bempUrl+'/includes/json/cars/vehicles.json')
     .then(data => data.json())
     .then(data => {
@@ -98,15 +120,42 @@ function bempGetVersion(){
       path = path[bempSelected[4]];
       path = path[Object.keys(path)];
       var top = bempSelected[5];
-      var h1 = '¿Que versión del vehículo es?';
-      bempOptions.classList.remove('d-flex');
+      var h1 = '¿Cuántas puertas tiene?';
       bempGetOptions(data, path, h1, false, top, 5);
     });
 }
 
+function bempGetVersion(){
+  carType = bC[5];
+
+  fetch(bempUrl+'/includes/json/cars/vehicles.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.vehiculos[bempSelected[0]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[1]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[2]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[3]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[4]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[5]];
+      path = path[Object.keys(path)];
+      var top = bempSelected[6];
+      var h1 = '¿Qué versión del vehículo es?';
+      bempOptions.classList.remove('d-flex');
+      bempGetOptions(data, path, h1, false, top, 6);
+    });
+}
+
 function bempGetKilometers(){
+  carVersion = bC[6];
+
   bempDisableNextBtn();
-  bempH1.innerHTML = '¿Cuántos kilometros tiene el vehículo?';
+  bempH1.innerHTML = '¿Cuántos kilometros tiene?';
+  bempNextBtn.innerHTML = 'Siguiente';
   bempOptions.classList.add('d-flex');
   bempOptions.innerHTML = '<div id="bemp-km"></div>';
   bempKm = document.getElementById('bemp-km');
@@ -128,7 +177,7 @@ function bempGetKilometers(){
 }
 
 function bempSelectKilometers(){
-  bC[6] = this.value.slice(0, this.maxLength);
+  bC[7] = this.value.slice(0, this.maxLength);
 
   bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4]+' / '+bC[5]+' / '+bC[6]+' km';
 
@@ -140,7 +189,9 @@ function bempSelectKilometers(){
 }
 
 function bempGetUbication(){
-  bempH1.innerHTML = '¿Dónde está ubicado el vehículo?';
+  carKilometers = bC[7];
+
+  bempH1.innerHTML = '¿Dónde está ubicado?';
   bempNextBtn.innerHTML = 'Enviar';
   bempDisableNextBtn();
   bempOptions.innerHTML = '<select id="bemp-select"></select>'
@@ -157,7 +208,7 @@ function bempGetUbication(){
 
   select.addEventListener('change', function(){
     if(this.value != 'Selecciona una opción'){
-      bC[7] = this.value;
+      bC[8] = this.value;
 
       bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4]+' / '+bC[5]+' / '+bC[6]+' km / '+bC[7];
 
@@ -169,15 +220,18 @@ function bempGetUbication(){
 }
 
 function bempSendResult(){
+  carUbication = bC[8];
+
   var msj = '';
-  msj += '*Marca: '+bC[0]+'*%0A%0A';
-  msj += '*Modelo: '+bC[1]+'*%0A%0A';
-  msj += '*Motorización: '+bC[2]+'*%0A%0A';
-  msj += '*Transmisión: '+bC[3]+'*%0A%0A';
-  msj += '*Tipo: '+bC[4]+'*%0A%0A';
-  msj += '*Version: '+bC[5]+'*%0A%0A';
-  msj += '*Kilometros: '+bC[6]+'*%0A%0A';
-  msj += '*Ubicación: '+bC[7]+'*%0A%0A';
+  msj += '*Año: '+carYear+'*%0A%0A';
+  msj += '*Marca: '+carBrand+'*%0A%0A';
+  msj += '*Modelo: '+carModel+'*%0A%0A';
+  msj += '*Motorización: '+carEngine+'*%0A%0A';
+  msj += '*Transmisión: '+carTransmition+'*%0A%0A';
+  msj += '*Tipo: '+carType+'*%0A%0A';
+  msj += '*Version: '+carVersion+'*%0A%0A';
+  msj += '*Kilometros: '+carKilometers+'*%0A%0A';
+  msj += '*Ubicación: '+carUbication+'*%0A%0A';
 
   msj = msj.replace(/ /g,'%20');
   bempMsj = bempMsj.replace(/ /g,'%20');
