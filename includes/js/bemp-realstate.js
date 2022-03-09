@@ -44,6 +44,7 @@ function bempGetOwnership(){
 
 function bempGetSquareMeters(){
   bempOwnership = bC[1];
+  bempOptions.classList.remove('d-flex');
 
   fetch(bempUrl+'/includes/json/realstate/realstate.json')
     .then(data => data.json())
