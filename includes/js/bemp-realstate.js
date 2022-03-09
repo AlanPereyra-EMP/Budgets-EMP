@@ -60,7 +60,7 @@ function bempGetAge(){
   bempsquareMeters = bC[2];
 
   bempDisableNextBtn();
-  bempH1.innerHTML = '¿En que año se comenzó a construir?';
+  bempH1.innerHTML = '¿En que año se compró o construyó?';
   bempNextBtn.innerHTML = 'Siguiente';
   bempOptions.classList.add('d-flex');
   bempOptions.innerHTML = '<div id="bemp-age"></div>';
@@ -86,7 +86,7 @@ function bempGetAge(){
 function bempSelectMeters(){
   bC[3] = this.value;
 
-  bempBreadcrumbs.innerHTML = bempOperation+'/'+bempOwnership+'/'+bempsquareMeters+'/'+bC[3];
+  bempBreadcrumbs.innerHTML = bempOperation+' / '+bempOwnership+' / '+bempsquareMeters+' / '+bC[3];
 
   if((parseInt(this.value) <= parseInt(this.max))&&(parseInt(this.value) >= parseInt(this.min))){
     bempEnableNextBtn();
