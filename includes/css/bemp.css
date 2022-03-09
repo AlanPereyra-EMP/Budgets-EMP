@@ -23,6 +23,11 @@
   justify-content: center;
   text-align: center;
 }
+@media (max-width: 400px) {
+  #bemp-h1{
+    font-size: 28px;
+  }
+}
 #bemp-breadcrumbs{
   align-items: center;
   color: var(--emp-head-title-color);
@@ -77,14 +82,21 @@
   background: var(--emp-content-color)!important;
   color: var(--emp-content-bg)!important;
 }
-#bemp-km{
+#bemp-km, #bemp-age{
   margin: auto;
-}
-#bemp-km-input{
   width: 100%;
 }
-#bemp-km small{
-  color: #999;
+#bemp-km-input, #bemp-age-input{
+  font-size: 30px;
+  width: 100%;
+}
+@media (min-width: 992px){
+  #bemp-km-input, #bemp-age-input{
+    font-size: 50px;
+    width: 100%;
+  }
+}
+#bemp-km small, #bemp-age small{
 }
 #bemp-select{
   height: 100px;
@@ -106,7 +118,6 @@
   font-size: 20px;
   height: 60%;
   margin: 2.5% 20px;
-  padding: 2%;
   position: absolute;
   width: 20%;
 }

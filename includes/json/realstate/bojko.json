@@ -1,0 +1,28 @@
+{
+  "Bojko": [
+    {"Ubicaciones": [
+      {"Misiones": [
+        {"Obera - Misones": []},
+        {"Campo Viera - Misones": []},
+        {"Campo Ramon - Misones": []},
+        {"Guaraní - Misones": []},
+        {"Los Helechos - Misones": []},
+        {"L.N. Alem - Misones": []},
+        {"San Vicente - Misones": []},
+        {"Puerto Rico - Misones": []},
+        {"Apóstoles - Misones": []},
+        {"Garupá - Misones": []},
+        {"Posadas - Misones": []},
+        {"Otra": []}
+      ]},
+      {"Buenos Aires": [
+        {"Zona Norte": []},
+        {"Zona Oeste": []},
+        {"Zona Sur": []},
+        {"Capital": []},
+        {"La Plata": []},
+        {"Otra": []}
+      ]}
+    ]}
+  ]
+}
