@@ -1,10 +1,10 @@
 {
-  "Realstate": [
-    {"Operación": [
-      {"Opciones": [
-        {"Venta": []},
-        {"Alquiler": []},
-        {"Alquiler temporal": []}
+  "Breycon": [
+    {"Objetivo": [
+      {"Objetivo": [
+        {"Perder peso": []},
+        {"Aumentar peso": []},
+        {"Mantener peso": []}
       ]}
     ]},
     {"Titularidad": [
@@ -24,16 +24,6 @@
         {"Más de 500 m2": []}
       ]}
     ]},
-    {"Antigüedad": [
-        {"Opciones": [
-          {"A estrenar": []},
-          {"Menos de un año": []},
-          {"De 1 a 2 años": []},
-          {"De 5 a 10 años": []},
-          {"De 10 a 20 años": []},
-          {"De 20 a 40 años": []},
-          {"50 o más años": []}
-        ]}
-      ]}
+    {"Año": []}
   ]
 }

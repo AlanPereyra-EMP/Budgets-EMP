@@ -38,6 +38,9 @@ if(!shortcode_exists('budgets-emp')) {
       add_action('wp_enqueue_scripts','add_bemp_realstate_script', 9, 1);
       add_action('wp_enqueue_scripts','add_bemp_bojko_script', 8, 1);
     }
+    if($type == 'breycon'){
+      add_action('wp_enqueue_scripts','add_bemp_breycon_script', 9, 1);
+    }
 
     // Components
     return '<div style="height:100vh;"></div>

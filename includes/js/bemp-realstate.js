@@ -59,41 +59,15 @@ function bempGetSquareMeters(){
 
 function bempGetAge(){
   bempsquareMeters = bC[2];
-
-  bempDisableNextBtn();
-  bempH1.innerHTML = '¿En que año se compró o construyó?';
-  bempNextBtn.innerHTML = 'Siguiente';
-  bempOptions.classList.add('d-flex');
-  bempOptions.innerHTML = '<div id="bemp-age"></div>';
-  bempA = document.getElementById('bemp-age');
-  var currentYear = new Date().getFullYear();
-
-  var x = document.createElement("input");
-  x.setAttribute("id", "bemp-age-input");
-  x.setAttribute("type", "number");
-  x.setAttribute("placeholder", "Escribí acá el año");
-  x.setAttribute("min", "1910");
-  x.setAttribute("max", currentYear);
-  x.setAttribute("maxLength", currentYear.length);
-  bempA.appendChild(x);
-
-  bempA.innerHTML += '<small>Escribí un año entre '+x.min+' y '+x.max +'</small>';
-
-  var input = document.getElementById('bemp-age-input');
-  input.addEventListener('keyup', bempSelectMeters, false);
-  input.addEventListener('change', bempSelectMeters, false);
-}
-
-function bempSelectMeters(){
-  bC[3] = this.value;
-
-  bempBreadcrumbs.innerHTML = bempOperation+' / '+bempOwnership+' / '+bempsquareMeters+' / '+bC[3];
-
-  if((parseInt(this.value) <= parseInt(this.max))&&(parseInt(this.value) >= parseInt(this.min))){
-    bempEnableNextBtn();
-  }else{
-    bempDisableNextBtn();
-  }
+  fetch(bempUrl+'/includes/json/realstate/realstate.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.Realstate[3];
+      path = path[Object.keys(path)];
+      var top = bempsquareMeters;
+      var h1 = '¿Cuántos años de antigüedad tiene?';
+      bempGetOptions(data, path, h1, true, top, 3);
+    });
 }
 
 function bempSendResult(){
