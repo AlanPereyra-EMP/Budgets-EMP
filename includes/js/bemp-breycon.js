@@ -1,19 +1,27 @@
 // Define the app steps functions
 bempSteps = [
-  bempGetObjetive,
+  bempGetSex,
   bempGetKilograms,
-  bempGetAge,
+  bempGetHeight,
+  bempGetWeight,
+  bempGetMuscle,
+  bempGetInjury,
+  bempGetBirth,
+  bempGetUbication,
   bempSendResult
 ];
 
 // Define all local variables
-var bempObjetive = '';
-var bempKilograms = '';
 var bempSex = '';
-var bempAge = '';
+var bempKilograms = '';
+var bempHeight = '';
+var bempWeight = '';
+var bempMuscle = '';
+var bempInjury = '';
+var bempBirth = '';
 var bempUbication = '';
 
-function bempGetObjetive(){
+function bempGetSex(){
   bempOptions.classList.remove('d-flex');
 
   fetch(bempUrl+'/includes/json/breycon/breycon.json')
@@ -22,48 +30,32 @@ function bempGetObjetive(){
       bempDisablePrevBtn();
       var path = data.Breycon[0];
       path = path[Object.keys(path)];
-      var h1 = '¿Cuál es tu objetivo?';
+      var h1 = 'Soy un...';
       bempGetOptions(data, path, h1, true, '', 0);
     });
 }
-bempGetObjetive();
+bempGetSex();
 
-var boolean = true;
 function bempGetKilograms(){
-  bempObjetive = bC[0];
+  bempSex = bC[0];
   bempOptions.classList.add('d-flex');
   bempDisableNextBtn();
 
-  if(bempObjetive == 'Perder peso'){
-    var objetive = 'perder';
-  } else if(bempObjetive == 'Aumentar peso'){
-    var objetive = 'aumentar';
-  } else {
-    if(boolean){
-      bC[1] = 0;
-      bempNextStep();
-      boolean = false;
-    } else {
-      boolean = true;
-      bempPrevStep();
-    }
-  }
-
-  bempH1.innerHTML = '¿Cuantos kilos te gustaría '+objetive+'?';
-  bempOptions.innerHTML = '<div id="bemp-age"></div>';
-  bempA = document.getElementById('bemp-age');
+  bempH1.innerHTML = '¿Cuanto pesas?';
+  bempOptions.innerHTML = '<div id="bemp-number"></div>';
+  bempA = document.getElementById('bemp-number');
 
   var x = document.createElement("input");
-  x.setAttribute("id", "bemp-age-input");
+  x.setAttribute("id", "bemp-number-input");
   x.setAttribute("type", "number");
-  x.setAttribute("placeholder", "Peso en Kg ("+objetive+")");
-  x.setAttribute("min", "1");
-  x.setAttribute("max", "90");
+  x.setAttribute("placeholder", "Peso en Kg");
+  x.setAttribute("min", "20");
+  x.setAttribute("max", "200");
   bempA.appendChild(x);
 
   bempA.innerHTML += '<small>Escribí un peso entre '+x.min+' y '+x.max +'</small>';
 
-  var input = document.getElementById('bemp-age-input');
+  var input = document.getElementById('bemp-number-input');
   input.addEventListener('keyup', bempSelectKilograms, false);
   input.addEventListener('change', bempSelectKilograms, false);
 }
@@ -71,7 +63,7 @@ function bempGetKilograms(){
 function bempSelectKilograms(){
   bC[1] = this.value+'Kg';
 
-  bempBreadcrumbs.innerHTML = bempObjetive+' / '+bC[1];
+  bempBreadcrumbs.innerHTML = bempSex+' / '+bC[1];
 
   if((parseInt(this.value) <= parseInt(this.max))&&(parseInt(this.value) >= parseInt(this.min))){
     bempEnableNextBtn();
@@ -80,32 +72,111 @@ function bempSelectKilograms(){
   }
 }
 
-function bempGetAge(){
+function bempGetHeight(){
   bempKilograms = bC[1];
   bempOptions.classList.add('d-flex');
   bempDisableNextBtn();
 
-  bempH1.innerHTML = '¿Cuándo naciste?';
-  bempOptions.innerHTML = '<div id="bemp-age"></div>';
-  bempA = document.getElementById('bemp-age');
+  bempH1.innerHTML = '¿Cuanto medís?';
+  bempOptions.innerHTML = '<div id="bemp-number"></div>';
+  bempA = document.getElementById('bemp-number');
 
   var x = document.createElement("input");
-  x.setAttribute("id", "bemp-age-input");
+  x.setAttribute("id", "bemp-number-input");
+  x.setAttribute("type", "number");
+  x.setAttribute("placeholder", "Altura en cm");
+  x.setAttribute("min", "100");
+  x.setAttribute("max", "200");
+  bempA.appendChild(x);
+
+  bempA.innerHTML += '<small>Escribí una altura entre '+x.min+' y '+x.max +'</small>';
+
+  var input = document.getElementById('bemp-number-input');
+  input.addEventListener('keyup', bempSelectHeight, false);
+  input.addEventListener('change', bempSelectHeight, false);
+}
+
+function bempSelectHeight(){
+  bC[2] = this.value+'cm';
+  bempBreadcrumbs.innerHTML = bempSex+' / '+bempKilograms+' / '+bC[2];
+
+  if((parseInt(this.value) <= parseInt(this.max))&&(parseInt(this.value) >= parseInt(this.min))){
+    bempEnableNextBtn();
+  }else{
+    bempDisableNextBtn();
+  }
+}
+
+function bempGetWeight(){
+  bempHeight = bC[3];
+  bempOptions.classList.remove('d-flex');
+
+  fetch(bempUrl+'/includes/json/breycon/breycon.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.Breycon[1];
+      path = path[Object.keys(path)];
+      var h1 = 'Objetivo personal';
+      bempGetOptions(data, path, h1, true, '', 3);
+    });
+}
+
+function bempGetMuscle(){
+  bempWeight = bC[4]
+  bempOptions.classList.remove('d-flex');
+
+  fetch(bempUrl+'/includes/json/breycon/breycon.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.Breycon[2];
+      path = path[Object.keys(path)];
+      var top = bempWeight;
+      var h1 = '¿Cuál es tu prioridad?';
+      bempGetOptions(data, path, h1, true, top, 4);
+    });
+}
+
+function bempGetInjury(){
+  bempMuscle = bC[5]
+  bempOptions.classList.remove('d-flex');
+
+  fetch(bempUrl+'/includes/json/breycon/breycon.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.Breycon[3];
+      path = path[Object.keys(path)];
+      var top = bempMuscle;
+      var h1 = '¿Te lecionaste alguna vez?';
+      bempGetOptions(data, path, h1, true, top, 5);
+    });
+}
+
+function bempGetBirth(){
+  bempInjury = bC[6];
+  bempOptions.classList.add('d-flex');
+  bempDisableNextBtn();
+
+  bempH1.innerHTML = '¿Cuándo naciste?';
+  bempOptions.innerHTML = '<div id="bemp-number"></div>';
+  bempA = document.getElementById('bemp-number');
+
+  var x = document.createElement("input");
+  x.setAttribute("id", "bemp-number-input");
   x.setAttribute("type", "date");
   bempA.appendChild(x);
 
   bempA.innerHTML += '<small>Ingresá tu fecha de nacimiento</small>';
 
-  var input = document.getElementById('bemp-age-input');
-  input.addEventListener('keyup', bempSelectAge, false);
-  input.addEventListener('change', bempSelectAge, false);
+  var input = document.getElementById('bemp-number-input');
+  input.addEventListener('keyup', bempSelectBirth, false);
+  input.addEventListener('change', bempSelectBirth, false);
 }
 
-function bempSelectAge(){
-  bC[1] = this.value;
-  bempBreadcrumbs.innerHTML = bempObjetive+' / '+bempKilograms+' / '+bC[1];
+function bempSelectBirth(){
+  bC[6] = this.value;
+  bempBreadcrumbs.innerHTML = bC[0]+' / '+bC[1]+' / '+bC[2]+' / '+bC[3]+' / '+bC[4]+' / '+bC[5]+' / '+bC[6];
 
-  if(bC[1]){
+  if(bC[6]){
     bempEnableNextBtn();
   }else{
     bempDisableNextBtn();
@@ -113,18 +184,18 @@ function bempSelectAge(){
 }
 
 function bempGetUbication(){
-  bempAge = bC[3];
+  bempAge = bC[6];
   bempOptions.classList.remove('d-flex');
   bempNextBtn.innerHTML = 'Enviar';
 
   fetch(bempUrl+'/includes/json/breycon/breycon.json')
     .then(data => data.json())
     .then(data => {
-      var path = data.Breycon[0];
+      var path = data.Breycon[4];
       path = path[Object.keys(path)];
       var top = bempAge;
       var h1 = '¿Dónde está ubucado?';
-      bempGetOptions(data, path, h1, true, top, 4);
+      bempGetOptions(data, path, h1, true, top, 7);
     });
 }
 
@@ -132,10 +203,13 @@ function bempSendResult(){
   bempUbication = bC[4];
 
   var msj = '';
-  msj += '*Operación: '+bempOperation+'*%0A%0A';
-  msj += '*Titularidad: '+bempOwnership+'*%0A%0A';
-  msj += '*Superficie construida: '+bempsquareMeters+'*%0A%0A';
-  msj += '*Año: '+bempAge+'*%0A%0A';
+  msj += '*Soy un/a: '+bempSex+'*%0A%0A';
+  msj += '*Peso: '+bempKilograms+'*%0A%0A';
+  msj += '*Mido: '+bempHeight+'*%0A%0A';
+  msj += '*Quiero enfocarme en: '+bempWeight+'*%0A%0A';
+  msj += '*Con prioridad en: '+bempMuscle+'*%0A%0A';
+  msj += '*Lesiones: '+bempInjury+'*%0A%0A';
+  msj += '*Nací el: '+bempBirth+'*%0A%0A';
   msj += '*Ubicación: '+bempUbication+'*%0A%0A';
 
   msj = msj.replace(/ /g,'%20');

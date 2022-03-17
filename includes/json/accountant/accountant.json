@@ -1,38 +1,36 @@
 {
-  "Breycon": [
-    {"Sexo": [
-      {"": [
-        {"Espartano": []},
-        {"Espartana": []}
-      ]}
-    ]},
-    {"Objetivo": [
-      {"Aumentar peso": [
-        {"Ganancia de peso moderado": []},
-        {"Ganancia de peso rápido": []}
-      ]},
-      {"Mantener peso": [
-        {"Mantenimineto de peso": []}
-      ]},
-      {"Reducir peso": [
-        {"Descenso de peso moderado": []},
-        {"Descenso de peso rápido": []}
-      ]}
-    ]},
-    {"Musculación": [
-      {"": [
-        {"Ganancia muscular": []},
-        {"Perdida de peso": []}
-      ]}
-    ]},
-    {"Lesiones": [
+  "Accountant": [
+    {"Afip": [
       {"Si": [
-        {"Tren superior": []},
-        {"Tren inferior": []},
-        {"Tren ambos": []}
+        {"Soy Monotributista": []},
+        {"Soy Responsable inscripto": []}
       ]},
       {"No": [
-        {"Nunca me lecioné": []}
+        {"Aún no estoy inscripto": []},
+        {"Otra": []}
+      ]}
+    ]},
+    {"Negocio": [
+      {"Si": [
+        {"Tengo un negocio y vivo de el": []},
+        {"Tengo un negocio pero no vivo de el": []}
+      ]},
+      {"No": [
+        {"No tengo negocio pero tengo todo listo": []},
+        {"No tengo negocio pero me gustaría tenerlo": []}
+      ]}
+    ]},
+    {"Empleado": [
+      {"Con empleados": [
+        {"De 1 a 3 empleados": []},
+        {"De 3 a 5 empleados": []},
+        {"De 5 a 10 empleados": []},
+        {"De 15 a 20 empleados": []},
+        {"más de 20 empleados": []}
+      ]},
+      {"Sin empleados": [
+        {"No tengo pero quiero contratar": []},
+        {"No tengo ni quiero contratar": []}
       ]}
     ]},
     {"Ubicación": [

@@ -83,21 +83,21 @@
   background: var(--emp-content-color)!important;
   color: var(--emp-content-bg)!important;
 }
-#bemp-km, #bemp-age{
+#bemp-km, #bemp-number{
   margin: auto;
   width: 100%;
 }
-#bemp-km-input, #bemp-age-input{
+#bemp-km-input, #bemp-number-input{
   font-size: 30px;
   width: 100%;
 }
 @media (min-width: 992px){
-  #bemp-km-input, #bemp-age-input{
+  #bemp-km-input, #bemp-number-input{
     font-size: 50px;
     width: 100%;
   }
 }
-#bemp-km small, #bemp-age small{
+#bemp-km small, #bemp-number small{
 }
 #bemp-select{
   height: 100px;
