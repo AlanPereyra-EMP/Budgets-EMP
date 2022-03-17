@@ -68,17 +68,19 @@ function bempGetAge(){
   bempDisableNextBtn();
 
   bempH1.innerHTML = '¿Cuándo naciste?';
-  bempOptions.innerHTML = '<div id="bemp-age"></div>';
-  bempA = document.getElementById('bemp-age');
+  bempOptions.innerHTML = '<div id="bemp-number"></div>';
+  bempA = document.getElementById('bemp-number');
 
   var x = document.createElement("input");
-  x.setAttribute("id", "bemp-age-input");
-  x.setAttribute("type", "date");
+  x.setAttribute("id", "bemp-number-input");
+  x.setAttribute("type", "year");
+  x.setAttribute("min", "1900");
+  x.setAttribute("max", "2022");
   bempA.appendChild(x);
 
-  bempA.innerHTML += '<small>Ingresá tu fecha de nacimiento</small>';
+  bempA.innerHTML += '<small>Ingresá el año en el que naciste</small>';
 
-  var input = document.getElementById('bemp-age-input');
+  var input = document.getElementById('bemp-number-input');
   input.addEventListener('keyup', bempSelectAge, false);
   input.addEventListener('change', bempSelectAge, false);
 }
