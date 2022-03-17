@@ -162,7 +162,7 @@ function bempGetBirth(){
 
   var x = document.createElement("input");
   x.setAttribute("id", "bemp-number-input");
-  x.setAttribute("type", "year");
+  x.setAttribute("type", "number");
   x.setAttribute("min", "1960");
   x.setAttribute("max", "2022");
   bempA.appendChild(x);
