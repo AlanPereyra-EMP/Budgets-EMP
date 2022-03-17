@@ -167,7 +167,7 @@ function bempGetBirth(){
   x.setAttribute("max", "2022");
   bempA.appendChild(x);
 
-  bempA.innerHTML += '<small>Ingresá tu fecha de nacimiento</small>';
+  bempA.innerHTML += '<small>Ingresá el año en el que naciste</small>';
 
   var input = document.getElementById('bemp-number-input');
   input.addEventListener('keyup', bempSelectBirth, false);
