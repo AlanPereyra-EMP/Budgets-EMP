@@ -1,0 +1,39 @@
+{
+  "Realstate": [
+    {"Operación": [
+      {"Opciones": [
+        {"Venta": []},
+        {"Alquiler": []},
+        {"Alquiler temporal": []}
+      ]}
+    ]},
+    {"Titularidad": [
+      {"Opciones": [
+        {"Soy el/la único/a titular": []},
+        {"Soy uno de los titulares": []},
+        {"No soy titular": []}
+      ]}
+    ]},
+    {"Metros construidos": [
+      {"Opciones": [
+        {"Menos de 30 m2": []},
+        {"De 30 a 50 m2": []},
+        {"De 50 a 100 m2": []},
+        {"De 100 a 200 m2": []},
+        {"De 200 a 500 m2": []},
+        {"Más de 500 m2": []}
+      ]}
+    ]},
+    {"Antigüedad": [
+        {"Opciones": [
+          {"A estrenar": []},
+          {"Menos de un año": []},
+          {"De 1 a 2 años": []},
+          {"De 5 a 10 años": []},
+          {"De 10 a 20 años": []},
+          {"De 20 a 40 años": []},
+          {"50 o más años": []}
+        ]}
+      ]}
+  ]
+}

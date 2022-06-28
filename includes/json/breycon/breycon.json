@@ -1,0 +1,73 @@
+{
+  "Breycon": [
+    {"Sexo": [
+      {"": [
+        {"Espartano": []},
+        {"Espartana": []}
+      ]}
+    ]},
+    {"Objetivo": [
+      {"Aumentar peso": [
+        {"Ganancia de peso moderado": []},
+        {"Ganancia de peso rápido": []}
+      ]},
+      {"Mantener peso": [
+        {"Mantenimineto de peso": []}
+      ]},
+      {"Reducir peso": [
+        {"Descenso de peso moderado": []},
+        {"Descenso de peso rápido": []}
+      ]}
+    ]},
+    {"Musculación": [
+      {"": [
+        {"Ganancia muscular": []},
+        {"Perdida de peso": []}
+      ]}
+    ]},
+    {"Lesiones": [
+      {"Si": [
+        {"Tren superior": []},
+        {"Tren inferior": []},
+        {"Tren ambos": []}
+      ]},
+      {"No": [
+        {"Nunca me lecioné": []}
+      ]}
+    ]},
+    {"Ubicación": [
+      {"Buenos Aires": [
+        {"Capital Federal": []},
+        {"Zona Norte": []},
+        {"Zona Oeste": []},
+        {"Zona Sur": []},
+        {"La plata": []}
+      ]},
+      {"Interior": [
+        {"Interior de Buenos Aires": []},
+        {"Misiones": []},
+        {"Corrientes": []},
+        {"Entre Rios": []},
+        {"Chubut": []},
+        {"Santa cruz": []},
+        {"Tucumán": []},
+        {"Santa Fe": []},
+        {"Cordoba": []},
+        {"La Rioja": []},
+        {"Rio negro": []},
+        {"Catamarca": []},
+        {"Neuquén": []},
+        {"Mendoza": []},
+        {"Salta": []},
+        {"Jujuy": []},
+        {"Santiago del Estero": []},
+        {"La pampa": []},
+        {"San luis": []},
+        {"San Juan": []},
+        {"Formosa": []},
+        {"Chaco": []},
+        {"Tierra del fuego": []}
+      ]}
+    ]}
+  ]
+}

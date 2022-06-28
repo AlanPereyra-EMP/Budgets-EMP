@@ -30,9 +30,15 @@ if(!shortcode_exists('budgets-emp')) {
     $type = $atributes['type'];
     if($type == 'cars'){
       add_action('wp_enqueue_scripts','add_bemp_cars_script', 9, 1);
-    }
-    if($type == 'awe'){
+    }else if($type == 'awe'){
       add_action('wp_enqueue_scripts','add_bemp_awe_script', 9, 1);
+    }else if($type == 'bojko'){
+      add_action('wp_enqueue_scripts','add_bemp_realstate_script', 9, 1);
+      add_action('wp_enqueue_scripts','add_bemp_bojko_script', 8, 1);
+    }else if($type == 'breycon'){
+      add_action('wp_enqueue_scripts','add_bemp_breycon_script', 9, 1);
+    }else if($type == 'accountant'){
+      add_action('wp_enqueue_scripts','add_bemp_accountant_script', 9, 1);
     }
     if($type == 'somi'){
       add_action('wp_enqueue_scripts','add_bemp_somi_script', 9, 1);

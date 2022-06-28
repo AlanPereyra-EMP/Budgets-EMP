@@ -1,6 +1,6 @@
 #bemp-page{
   border-top: 80px solid transparent;
-  height: 100vh;
+  height: 100%;
   left: 0;
   position: fixed;
   top: 0;
@@ -22,6 +22,11 @@
   margin: 0;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 400px) {
+  #bemp-h1{
+    font-size: 28px;
+  }
 }
 #bemp-breadcrumbs{
   align-items: center;
@@ -46,6 +51,7 @@
     height: 3%;
   }
   #bemp-container-options{
+    font-size: 25px;
     height: 50%;
   }
 }
@@ -77,14 +83,21 @@
   background: var(--emp-content-color)!important;
   color: var(--emp-content-bg)!important;
 }
-#bemp-km{
+#bemp-km, #bemp-number{
   margin: auto;
-}
-#bemp-km-input{
   width: 100%;
 }
-#bemp-km small{
-  color: #999;
+#bemp-km-input, #bemp-number-input{
+  font-size: 30px;
+  width: 100%;
+}
+@media (min-width: 992px){
+  #bemp-km-input, #bemp-number-input{
+    font-size: 50px;
+    width: 100%;
+  }
+}
+#bemp-km small, #bemp-number small{
 }
 #bemp-select{
   height: 100px;
@@ -106,7 +119,6 @@
   font-size: 20px;
   height: 60%;
   margin: 2.5% 20px;
-  padding: 2%;
   position: absolute;
   width: 20%;
 }
