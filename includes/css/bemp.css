@@ -32,7 +32,7 @@
   padding: 0 10px;
 }
 #bemp-container-options{
-  background: var(--emp-content-bg);
+  color: var(--emp-head-title-color);
   height: 56%;
   margin: auto;
   overflow: hidden;

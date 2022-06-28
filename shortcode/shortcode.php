@@ -34,6 +34,9 @@ if(!shortcode_exists('budgets-emp')) {
     if($type == 'awe'){
       add_action('wp_enqueue_scripts','add_bemp_awe_script', 9, 1);
     }
+    if($type == 'somi'){
+      add_action('wp_enqueue_scripts','add_bemp_somi_script', 9, 1);
+    }
 
     // Components
     return '<div style="height:100vh;"></div>
