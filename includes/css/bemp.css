@@ -8,7 +8,7 @@
 }
 #bemp-div{
   height: 100%;
-  max-width: 1200px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -37,7 +37,8 @@
   padding: 0 10px;
 }
 #bemp-container-options{
-  color: var(--emp-head-title-color);
+  color: var(--emp-content-color);
+  background: var(--emp-content-bg);
   height: 56%;
   margin: auto;
   overflow: hidden;
@@ -64,8 +65,17 @@
 #bemp-options .d-flex{
   display: flex;
 }
+#bemp-options img.emoji{
+  border-radius: 0!important;
+  height: 57px!important;
+  margin-left: 10px!important;
+  position: absolute;
+  width: 50px!important;
+  z-index: 9;
+}
 #bemp-options li{
   font-weight: 700;
+  position: relative;
 }
 #bemp-options li ul{
   padding: 0;
@@ -79,25 +89,27 @@
   background: #eeeeee77;
   cursor: pointer;
 }
+#bemp-options li ul li.has-emoji{
+  margin: 20px 0;
+  padding-left: 80px;
+}
 .bemp-option-actived{
   background: var(--emp-content-color)!important;
   color: var(--emp-content-bg)!important;
 }
-#bemp-km, #bemp-number{
+#bemp-km, #bemp-number, #bemp-data{
   margin: auto;
   width: 100%;
 }
-#bemp-km-input, #bemp-number-input{
+#bemp-km-input, #bemp-number-input, #bemp-data-input{
   font-size: 30px;
   width: 100%;
 }
 @media (min-width: 992px){
-  #bemp-km-input, #bemp-number-input{
+  #bemp-km-input, #bemp-number-input, #bemp-data-input{
     font-size: 50px;
     width: 100%;
   }
-}
-#bemp-km small, #bemp-number small{
 }
 #bemp-select{
   height: 100px;
@@ -120,12 +132,11 @@
   height: 60%;
   margin: 2.5% 20px;
   position: absolute;
-  width: 20%;
+  width: 38%;
 }
 @media(max-width:991px){
   .bemp-btn{
     margin: 5% 20px;
-    width: 38%;
   }
 }
 .bemp-btn-disabled:focus{

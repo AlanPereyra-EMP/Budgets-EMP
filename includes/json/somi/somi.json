@@ -1,20 +1,67 @@
 {
-  "vehiculos": [
-    {"sad": [
-      {"2021": [
-        {"De momento solo están cargados vehículos del año 2010": []}
-      ]},
-      {"2020": [
-        {"De momento solo están cargados vehículos del año 2010": []}
-      ]},
-      {"2019": [
-        {"De momento solo están cargados vehículos del año 2010": []}
-      ]},
-      {"2018": [
-        {"De momento solo están cargados vehículos del año 2010": []}
-      ]},
-      {"2017": [
-        {"De momento solo están cargados vehículos del año 2010": []}
+  "donaciones": [
+    {"🇦🇷": [
+      {"Pesos Argentinos": [
+        {"$200": [
+          {"": []}
+        ]},
+        {"$800": [
+          {"": []}
+        ]},
+        {"$1800": [
+          {"": []}
+        ]},
+        {"Otro": [
+          {"": []}
+        ]}
+      ]}
+    ]},
+    {"🇨🇱": [
+      {"Pesos Chilenos": [
+        {"$2000": [
+          {"": []}
+        ]},
+        {"$4000": [
+          {"": []}
+        ]},
+        {"$6000": [
+          {"": []}
+        ]},
+        {"Otro": [
+          {"": []}
+        ]}
+      ]}
+    ]},
+    {"🇵🇾": [
+      {"Guaranies": [
+        {"$2000": [
+          {"": []}
+        ]},
+        {"$800": [
+          {"": []}
+        ]},
+        {"$6000": [
+          {"": []}
+        ]},
+        {"Otro": [
+          {"": []}
+        ]}
+      ]}
+    ]},
+    {"🇺🇾": [
+      {"Pesos Uruguayos": [
+        {"$2000": [
+          {"": []}
+        ]},
+        {"$800": [
+          {"": []}
+        ]},
+        {"$6000": [
+          {"": []}
+        ]},
+        {"Otro": [
+          {"": []}
+        ]}
       ]}
     ]}
   ]

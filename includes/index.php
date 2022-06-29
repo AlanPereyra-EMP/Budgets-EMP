@@ -22,12 +22,12 @@ wp_register_script( 'bemp_awe_js', $src );
 function add_bemp_awe_script(){
   wp_enqueue_script( 'bemp_awe_js', $src);
 }
-<<<<<<< HEAD
+
 $src = plugins_url( 'includes/js/bemp-somi.js', __DIR__ );
 wp_register_script( 'bemp_somi_js', $src );
 function add_bemp_somi_script(){
   wp_enqueue_script( 'bemp_somi_js', $src);
-=======
+}
 $src = plugins_url( 'includes/js/bemp-realstate.js', __DIR__ );
 wp_register_script( 'bemp_realstate_js', $src );
 function add_bemp_realstate_script(){
@@ -47,7 +47,6 @@ $src = plugins_url( 'includes/js/bemp-accountant.js', __DIR__ );
 wp_register_script( 'bemp_accountant_js', $src );
 function add_bemp_accountant_script(){
   wp_enqueue_script( 'bemp_accountant_js', $src);
->>>>>>> 934bcc2b1ceb966164295951b86be2b1caf1fb3d
 }
 
 // Add Ajax support

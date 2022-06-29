@@ -161,6 +161,14 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
   }
 }
 
+// Add emogi support on first step
+function bempOptionsWithEmogi(){
+  var bempOptionsWithEmogi = document.querySelectorAll('#bemp-options li ul li');
+  for (var i = 0; i < bempOptionsWithEmogi.length; i++) {
+    bempOptionsWithEmogi[i].classList.add('has-emoji');
+  }
+}
+
 // Add fade in animation class
 window.onload = function(){
   var fempFadeIn = document.getElementById('bemp-div');
