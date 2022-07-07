@@ -7,17 +7,20 @@ if(!shortcode_exists('budgets-emp')) {
       'wsp'   => '541149472377',
       'msj'   => '',
       'type'  => 'cars',
+      'bg'  => '',
       'max_km'=> 200000
     ), $atts );
 
     // Save necessary data on JS global variables
     $wsp = $atributes['wsp'];
     $msj = $atributes['msj'];
+    $bg = $atributes['bg'];
     $url = plugins_url('', __DIR__ );
     $max_km = $atributes['max_km'];
     $js_variables = '<script>'.
                       'var bempWsp = "'. $wsp .'"; '.
                       'var bempMsj = "'. $msj .'";'.
+                      'var bempBg = "'. $bg .'";'.
                       'var bempUrl = "'. $url .'";'.
                       'var bempMaxKm = "'. $max_km .'";'.
                     '</script>';
@@ -47,6 +50,7 @@ if(!shortcode_exists('budgets-emp')) {
     // Components
     return '<div style="height:100vh;"></div>
             <div id="bemp-page">
+              <div id="bemp-background"></div>
               <div id="bemp-div" class="bemp-fade-in" style="opacity:0;height:0">
                 <h1 id="bemp-h1"></h1>
                 <div id="bemp-breadcrumbs"></div>

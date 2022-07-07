@@ -169,6 +169,19 @@ function bempOptionsWithEmogi(){
   }
 }
 
+
+// Add personalized background image
+function bempHasPersonalizedBackground() {
+  var bempBackground = document.getElementById('bemp-background');
+  var bempPage = document.getElementById('bemp-page');
+
+  if (bempBg) {
+    bempBackground.style.background = "url("+bempBg+") no-repeat 50% 50%";
+    bempPage.classList.add("has-personalized-bg");
+  }
+}
+bempHasPersonalizedBackground();
+
 // Add fade in animation class
 window.onload = function(){
   var fempFadeIn = document.getElementById('bemp-div');

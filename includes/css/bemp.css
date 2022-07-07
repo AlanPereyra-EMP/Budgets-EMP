@@ -1,10 +1,25 @@
 #bemp-page{
-  border-top: 80px solid transparent;
+  border-top: 50px solid transparent;
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
   width: 100vw;
+}
+#bemp-page.has-personalized-bg {
+  background: var(--emp-head-title-bg);
+}
+#bemp-background{
+  background: var(--emp-head-title-bg);
+  height: 100%;
+  opacity: var(--emp-head-opacity);
+  position: absolute;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #bemp-background{
+    background-size: 100%!important;
+  }
 }
 #bemp-div{
   height: 100%;
@@ -12,6 +27,11 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+@media (min-width: 992px) {
+  .has-personalized-bg #bemp-div{
+    margin-right: 8%;
+  }
 }
 #bemp-h1{
   align-items: center;
@@ -37,8 +57,7 @@
   padding: 0 10px;
 }
 #bemp-container-options{
-  color: var(--emp-content-color);
-  background: var(--emp-content-bg);
+  color: var(--emp-head-title-color);
   height: 56%;
   margin: auto;
   overflow: hidden;
@@ -53,7 +72,7 @@
   }
   #bemp-container-options{
     font-size: 25px;
-    height: 50%;
+    height: 40%;
   }
 }
 #bemp-options{
@@ -90,26 +109,31 @@
   cursor: pointer;
 }
 #bemp-options li ul li.has-emoji{
+  line-height: 37px;
   margin: 20px 0;
+  min-height: 57px;
   padding-left: 80px;
 }
 .bemp-option-actived{
-  background: var(--emp-content-color)!important;
-  color: var(--emp-content-bg)!important;
+  background: var(--emp-head-title-color)!important;
+  color: var(--emp-head-title-bg)!important;
 }
 #bemp-km, #bemp-number, #bemp-data{
   margin: auto;
   width: 100%;
 }
-#bemp-km-input, #bemp-number-input, #bemp-data-input{
+#bemp-km-input, #bemp-number-input, #bemp-name-input, #bemp-last-name-input{
   font-size: 30px;
   width: 100%;
 }
 @media (min-width: 992px){
-  #bemp-km-input, #bemp-number-input, #bemp-data-input{
+  #bemp-km-input, #bemp-number-input, #bemp-name-input, #bemp-last-name-input{
     font-size: 50px;
     width: 100%;
   }
+}
+input#bemp-name-input, input#bemp-last-name-input {
+  margin: 20px 0;
 }
 #bemp-select{
   height: 100px;

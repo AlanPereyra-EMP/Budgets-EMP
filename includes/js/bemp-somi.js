@@ -3,6 +3,7 @@ bempSteps = [
   bempGetCurrency,
   bempGetAmmount,
   bempGetName,
+  // bempGetLastName,
   // bempSendResult
 ];
 
@@ -10,6 +11,7 @@ bempSteps = [
 var somiCurrency = '';
 var somiAmmount = '';
 var somiName = '';
+var somiLastName = '';
 
 function bempGetCurrency(){
   fetch(bempUrl+'/includes/json/somi/somi.json')
@@ -32,9 +34,11 @@ function bempGetAmmount(){
     .then(data => {
       var path = data.donaciones[bempSelected[0]];
       path = path[Object.keys(path)];
+      path = path[bempSelected[1]];
+      path = path[Object.keys(path)];
       var top = bempSelected[1];
       var h1 = '¿Cuál será tu ayuda?';
-      bempGetOptions(data, path, h1, false, top, 1);
+      bempGetOptions(data, path, h1, true, top, 1);
       bempOptions.classList.remove('d-flex');
     });
 }
@@ -43,68 +47,55 @@ function bempGetName(){
   somiAmmount = bC[1];
 
   bempDisableNextBtn();
-  bempH1.innerHTML = '¿Cuál es tu nombre?';
+  bempH1.innerHTML = '¿Cómo es tu nombre completo?';
   bempNextBtn.innerHTML = 'Siguiente';
   bempOptions.classList.add('d-flex');
   bempOptions.innerHTML = '<div id="bemp-data"></div>';
-  bempKm = document.getElementById('bemp-data');
+  bempData = document.getElementById('bemp-data');
 
   var name = document.createElement("input");
-  name.setAttribute("id", "bemp-data-input");
+  name.setAttribute("id", "bemp-name-input");
   name.setAttribute("type", "text");
   name.setAttribute("placeholder", "Escribí acá tu nombre");
-  name.setAttribute("maxLength", "1");
-  bempKm.appendChild(name);
+  name.setAttribute("maxLength", "25");
+  bempData.appendChild(name);
 
-  bempKm.innerHTML += '<small>Este es un formulario seguro con protección SSL</small>';
+  var lastName = document.createElement("input");
+  lastName.setAttribute("id", "bemp-last-name-input");
+  lastName.setAttribute("type", "text");
+  lastName.setAttribute("placeholder", "Escribí acá tu apellido");
+  lastName.setAttribute("maxLength", "25");
+  bempData.appendChild(lastName);
 
-  var input = document.getElementById('bemp-data-input');
+  bempData.innerHTML += '<small>Este es un formulario seguro con protección SSL</small>';
+
+  var input = document.getElementById('bemp-name-input');
   input.addEventListener('keyup', bempSelectName, false);
   input.addEventListener('change', bempSelectName, false);
+
+  var input = document.getElementById('bemp-last-name-input');
+  input.addEventListener('keyup', bempSelectLastName, false);
+  input.addEventListener('change', bempSelectLastName, false);
 }
 
 function bempSelectName(){
   somiName = this.value;
 
-  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount +' / '+ somiName;
+  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount +' / '+ somiName+' '+ somiLastName;
 
-  if(parseInt(this.value)){
+  if(this.value){
     bempEnableNextBtn();
   }else{
     bempDisableNextBtn();
   }
 }
 
-function bempGetName(){
-  somiAmmount = bC[1];
+function bempSelectLastName(){
+  somiLastName = this.value;
 
-  bempDisableNextBtn();
-  bempH1.innerHTML = '¿Cuál es tu nombre?';
-  bempNextBtn.innerHTML = 'Siguiente';
-  bempOptions.classList.add('d-flex');
-  bempOptions.innerHTML = '<div id="bemp-data"></div>';
-  bempKm = document.getElementById('bemp-data');
+  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount +' / '+ somiName+' '+ somiLastName;
 
-  var lastName = document.createElement("input");
-  lastName.setAttribute("id", "bemp-data-input");
-  lastName.setAttribute("type", "text");
-  lastName.setAttribute("placeholder", "Escribí acá tu nombre");
-  lastName.setAttribute("maxLength", "25");
-  bempKm.appendChild(lastName);
-
-  bempKm.innerHTML += '<small>Este es un formulario seguro con protección SSL</small>';
-
-  var input = document.getElementById('bemp-data-input');
-  input.addEventListener('keyup', bempSelectlastName, false);
-  input.addEventListener('change', bempSelectlastName, false);
-}
-
-function bempSelectlastName(){
-  somilastName = this.value;
-
-  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount +' / '+ somiName+' / '+ somiName;
-
-  if(parseInt(this.value)){
+  if(this.value){
     bempEnableNextBtn();
   }else{
     bempDisableNextBtn();
