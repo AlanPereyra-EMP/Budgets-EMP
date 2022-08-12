@@ -2,17 +2,55 @@
   "donaciones": [
     {"🇦🇷": [
       {"Pesos Argentinos": [
-        {"Un café": [
-          {"$200": []}
+        {"Con $200 incorporamos alimentos nutritivos y saludables para un <b>niño/a</b> de los comedores.": [
+          {"$200": [
+            {"Mensualmente": [
+              {"https://google.com": []}
+            ]},
+            {"Solo una vez": [
+              {"https://google.com": []}
+            ]}
+          ]}
         ]},
-        {"Una comida": [
-          {"$800": []}
+        {"Con $ 300 garantizamos que una <b>persona migrante</b> en tránsito pueda higienizarse y comunicarse con su familia.": [
+          {"$300": [
+            {"Mensualmente": [
+              {"https://google.com": []}
+            ]},
+            {"Solo una vez": [
+              {"https://google.com": []}
+            ]}
+          ]}
         ]},
-        {"Una salida económica": [
-          {"$1800": []}
+        {"Con $ 500 cubrimos la asistencia sanitaria de emergencia a una <b>persona en situación de calle</b>.": [
+          {"$500": [
+            {"Mensualmente": [
+              {"https://google.com": []}
+            ]},
+            {"Solo una vez": [
+              {"https://google.com": []}
+            ]}
+          ]}
         ]},
-        {"Otro": [
-          {"Ingresar manualmente": []}
+        {"Con $ 1.000 garantizamos la participación de una <b>mujer</b> en una capacitación.": [
+          {"$1000": [
+            {"Mensualmente": [
+              {"https://google.com": []}
+            ]},
+            {"Solo una vez": [
+              {"https://google.com": []}
+            ]}
+          ]}
+        ]},
+        {"Con $ 2.000 sostenemos la beca mensual de un <b>joven</b> que quiere terminar sus estudios.": [
+          {"$2000": [
+            {"Mensualmente": [
+              {"https://google.com": []}
+            ]},
+            {"Solo una vez": [
+              {"https://google.com": []}
+            ]}
+          ]}
         ]}
       ]}
     ]},

@@ -51,10 +51,11 @@
 #bemp-breadcrumbs{
   align-items: center;
   color: var(--emp-head-title-color);
-  display: flex;
+  display: block;
   font-size: 12px;
   height: 9%;
   padding: 0 10px;
+  transition: all .1s ease-out;
 }
 #bemp-container-options{
   color: var(--emp-head-title-color);
@@ -63,6 +64,10 @@
   overflow: hidden;
 }
 @media(min-width:992px){
+  #bemp-breadcrumbs.onBreadcrumbs {
+    font-size: 20px;
+    height: 6%;
+  }
   #bemp-h1{
     height: 33%;
     font-size: 60px;
@@ -139,11 +144,6 @@ input#bemp-name-input, input#bemp-last-name-input {
   height: 100px;
   margin: auto;
   width: 100%;
-}
-@media (min-width: 991px){
-  #bemp-select{
-    width: 50%;
-  }
 }
 #bemp-buttons{
   height: 15%;

@@ -2,9 +2,9 @@
 bempSteps = [
   bempGetCurrency,
   bempGetAmmount,
+  bempGetFrecuency,
   bempGetName,
-  // bempGetLastName,
-  // bempSendResult
+  bempSendResult
 ];
 
 // Define all local variables
@@ -12,6 +12,7 @@ var somiCurrency = '';
 var somiAmmount = '';
 var somiName = '';
 var somiLastName = '';
+var somiFrecuency = '';
 
 function bempGetCurrency(){
   fetch(bempUrl+'/includes/json/somi/somi.json')
@@ -38,17 +39,36 @@ function bempGetAmmount(){
       path = path[Object.keys(path)];
       var top = bempSelected[1];
       var h1 = '¿Cuál será tu ayuda?';
-      bempGetOptions(data, path, h1, true, top, 1);
+      bempGetOptions(data, path, h1, 'onBreadcrumbs', top, 1);
+      bempOptions.classList.remove('d-flex');
+    });
+}
+
+function bempGetFrecuency(){
+  somiAmmount = bC[1];
+
+  fetch(bempUrl+'/includes/json/somi/somi.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.donaciones[bempSelected[0]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[1]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[2]];
+      path = path[Object.keys(path)];
+      var top = bempSelected[2];
+      var h1 = '¿Cuál será tu ayuda?';
+      bempGetOptions(data, path, h1, 'onBreadcrumbs', top, 2);
       bempOptions.classList.remove('d-flex');
     });
 }
 
 function bempGetName(){
-  somiAmmount = bC[1];
+  somiFrecuency = bC[2];
 
   bempDisableNextBtn();
   bempH1.innerHTML = '¿Cómo es tu nombre completo?';
-  bempNextBtn.innerHTML = 'Siguiente';
+  bempNextBtn.innerHTML = 'Enviar';
   bempOptions.classList.add('d-flex');
   bempOptions.innerHTML = '<div id="bemp-data"></div>';
   bempData = document.getElementById('bemp-data');
@@ -81,7 +101,8 @@ function bempGetName(){
 function bempSelectName(){
   somiName = this.value;
 
-  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount +' / '+ somiName+' '+ somiLastName;
+  bempBreadcrumbs.classList.remove('onBreadcrumbs');
+  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount+' / '+somiFrecuency  +' / '+ somiName+' '+ somiLastName;
 
   if(this.value){
     bempEnableNextBtn();
@@ -93,11 +114,34 @@ function bempSelectName(){
 function bempSelectLastName(){
   somiLastName = this.value;
 
-  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount +' / '+ somiName+' '+ somiLastName;
+  bempBreadcrumbs.classList.remove('onBreadcrumbs');
+  bempBreadcrumbs.innerHTML = somiCurrency+' / '+ somiAmmount+' / '+somiFrecuency +' / '+ somiName+' '+ somiLastName;
 
   if(this.value){
     bempEnableNextBtn();
   }else{
     bempDisableNextBtn();
   }
+}
+
+function bempSendResult() {
+  fetch(bempUrl+'/includes/json/somi/somi.json')
+    .then(data => data.json())
+    .then(data => {
+      var path = data.donaciones[bempSelected[0]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[1]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[2]];
+      path = path[Object.keys(path)];
+      path = path[bempSelected[3]];
+      path = path[Object.keys(path)];
+      var top = String(Object.keys(path[0]));
+      var finalLink = String(Object.keys(path[0][top][0]));
+
+      bempH1.innerHTML = 'Gracias, serás redirigido al sitio de pagos';
+      bempOptions.innerHTML = '<div class="text-center">Espera un momento...</div>';
+
+      window.location.href = finalLink;
+    });
 }

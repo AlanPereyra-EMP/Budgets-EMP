@@ -77,17 +77,22 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
   bempDisableNextBtn();
   bempH1.innerHTML = h1;
 
-  if(getTop){
+  var onBreadcrumbs;
+  if(getTop === true){
     getTopAndLower();
-  } else{
+  }else if (getTop == 'onBreadcrumbs') {
+    onBreadcrumbs = true;
+    getOnlyLower();
+  }else{
     getOnlyLower();
   }
 
+  var textLi;
   function getTopAndLower(){
     tops = path.length;
     for(var i = 0; i < tops; i++){
       var firstLevelLi = document.createElement("li");
-      var textLi = document.createTextNode(Object.keys(path[i]));
+      textLi = document.createTextNode(Object.keys(path[i]));
       firstLevelLi.appendChild(textLi);
       bempOptions.appendChild(firstLevelLi);
 
@@ -99,25 +104,27 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
   }
 
   function getOnlyLower() {
-    firstLevelLi = document.createElement("li");
-    var textLi = document.createTextNode(Object.keys(path[top]));
-    firstLevelLi.appendChild(textLi);
-    bempOptions.appendChild(firstLevelLi);
+    tops = path.length;
+    for(var i = 0; i < tops; i++){
+      firstLevelLi = document.createElement("li");
+      bempOptions.appendChild(firstLevelLi);
 
-    var firstLevelUl = document.createElement("ul");
-    firstLevelLi.appendChild(firstLevelUl);
+      var firstLevelUl = document.createElement("ul");
+      firstLevelLi.appendChild(firstLevelUl);
 
-    getLower(top, firstLevelUl);
+      getLower(i, firstLevelUl);
+    }
   }
   function getLower(i, firstLevelUl){
     var top = String(Object.keys(path[i]));
     var options = path[i][top].length;
     for(var l = 0; l < options; l++){
+      console.log(top);
       var secondLevelLi = document.createElement("li");
       secondLevelLi.classList.add('bemp-option');
       secondLevelLi.dataset.top = i;
       secondLevelLi.dataset.item = l;
-      var textLi = document.createTextNode(Object.keys(path[i][top][l]));
+      textLi = document.createTextNode(Object.keys(path[i][top][l]));
       secondLevelLi.appendChild(textLi);
       firstLevelUl.appendChild(secondLevelLi);
     }
@@ -134,21 +141,31 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
   }
 
   var lastSelected;
+  var element = [];
   for (var i = 0; i < items.length; i++) {
+
     items[i].addEventListener('click', function(){
+      console.log(String(Object.keys(path[parseInt(this.dataset.top)])));
       if(lastSelected){
         lastSelected.classList.remove('bemp-option-actived');
       }
       this.classList.add('bemp-option-actived');
 
       if(step > 0){
-        var aux = '';
-        for(var j = 0; j < step; j++){
-          aux += bC[j] +' / ';
+        if(onBreadcrumbs){
+          bempBreadcrumbs.innerHTML= String(Object.keys(path[parseInt(this.dataset.top)]));
+          bempBreadcrumbs.classList.add('onBreadcrumbs');
+          bempSelected[step+1] = parseInt(this.dataset.top),parseInt(this.dataset.item);
+        }else {
+          var aux = '';
+          for(var j = 0; j < step; j++){
+            aux += bC[j] +' / ';
+          }
+          bempBreadcrumbs.innerHTML= aux+this.innerHTML;
+          bempSelected[step+1] = parseInt(this.dataset.item);
         }
-        bempBreadcrumbs.innerHTML= aux+this.innerHTML;
-        bempSelected[step+1] = parseInt(this.dataset.item);
       }else{
+        bempBreadcrumbs.classList.remove('onBreadcrumbs');
         bempBreadcrumbs.innerHTML = this.innerHTML;
         bempSelected = [parseInt(this.dataset.top),parseInt(this.dataset.item)];
       }
