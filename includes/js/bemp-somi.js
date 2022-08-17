@@ -57,7 +57,7 @@ function bempGetFrecuency(){
       path = path[bempSelected[2]];
       path = path[Object.keys(path)];
       var top = bempSelected[2];
-      var h1 = '¿Cuál será tu ayuda?';
+      var h1 = '¿Con qué frecuencia?';
       bempGetOptions(data, path, h1, 'onBreadcrumbs', top, 2);
       bempOptions.classList.remove('d-flex');
     });
