@@ -65,13 +65,52 @@
       ]}
     ]},
     {"🇨🇱": [
-      {"Próximamente": []}
+      {"Pesos Chilenos": [
+        {"Un café": [
+          {"$2000": []}
+        ]},
+        {"Una compra del super": [
+          {"$4000": []}
+        ]},
+        {"Una salida barata": [
+          {"$6000": []}
+        ]},
+        {"Otro": [
+          {"Ingresar manualmente": []}
+        ]}
+      ]}
     ]},
     {"🇵🇾": [
-      {"Próximamente": []}
+      {"Guaranies": [
+        {"Un café": [
+          {"$12000": []}
+        ]},
+        {"Una comida": [
+          {"26000": []}
+        ]},
+        {"Una salida economica": [
+          {"35000": []}
+        ]},
+        {"Otro": [
+          {"Ingresar manualmente": []}
+        ]}
+      ]}
     ]},
     {"🇺🇾": [
-      {"Próximamente": []}
+      {"Pesos Uruguayos": [
+        {"Un café": [
+          {"140": []}
+        ]},
+        {"Una comida": [
+          {"600": []}
+        ]},
+        {"Una salida barata": [
+          {"800": []}
+        ]},
+        {"Otro": [
+          {"Ingresar manualmente": []}
+        ]}
+      ]}
     ]}
   ]
 }

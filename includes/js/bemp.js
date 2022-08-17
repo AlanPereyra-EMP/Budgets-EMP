@@ -145,7 +145,7 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
   for (var i = 0; i < items.length; i++) {
 
     items[i].addEventListener('click', function(){
-      console.log(String(Object.keys(path[parseInt(this.dataset.top)])));
+      console.log(this.innerHTML);
       if(lastSelected){
         lastSelected.classList.remove('bemp-option-actived');
       }
@@ -170,10 +170,33 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
         bempSelected = [parseInt(this.dataset.top),parseInt(this.dataset.item)];
       }
       bC[step] = this.innerHTML;
-
-      console.log(bempSelected);
       lastSelected = this;
-      bempEnableNextBtn();
+
+      // Detect if the child element on json document is "disabled" if it is disable next step with the cliked option
+      // console.log(!(step == 0));
+      if (step == 0) {
+        auxPath = path[bempSelected[step]];
+        auxPath = auxPath[Object.keys(auxPath)];
+
+        auxPath = auxPath[bempSelected[1]];
+        auxPath = auxPath[Object.keys(auxPath)];
+        auxPath = auxPath[bempSelected[1]];
+      } else {
+        auxPath = path[bempSelected[step+1]];
+        auxPath = auxPath[Object.keys(auxPath)];
+        auxPath = auxPath[0];
+        auxPath = auxPath[Object.keys(auxPath)];
+        auxPath = auxPath[0];
+      }
+      if (auxPath) {
+        auxPath = Object.keys(auxPath);
+      }
+
+      if (auxPath) {
+        bempEnableNextBtn();
+      }else {
+        bempDisableNextBtn();
+      }
     });
   }
 }
