@@ -42,6 +42,8 @@ if(!shortcode_exists('budgets-emp')) {
       add_action('wp_enqueue_scripts','add_bemp_breycon_script', 9, 1);
     }else if($type == 'accountant'){
       add_action('wp_enqueue_scripts','add_bemp_accountant_script', 9, 1);
+    }else if($type == 'example'){
+      add_action('wp_enqueue_scripts','add_bemp_example_script', 9, 1);
     }
     if($type == 'somi'){
       add_action('wp_enqueue_scripts','add_bemp_somi_script', 9, 1);

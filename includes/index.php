@@ -48,6 +48,11 @@ wp_register_script( 'bemp_accountant_js', $src );
 function add_bemp_accountant_script(){
   wp_enqueue_script( 'bemp_accountant_js', $src);
 }
+$src = plugins_url( 'includes/js/bemp-example.js', __DIR__ );
+wp_register_script( 'bemp_example_js', $src );
+function add_bemp_example_script(){
+  wp_enqueue_script( 'bemp_example_js', $src);
+}
 
 // Add Ajax support
 wp_localize_script('bemp_cars_js', 'bempAjax', [
@@ -66,6 +71,9 @@ wp_localize_script('bemp_breycon_js', 'bempAjax', [
   'url' => admin_url('admin-ajax.php')
 ]);
 wp_localize_script('bemp_accountant_js', 'bempAjax', [
+  'url' => admin_url('admin-ajax.php')
+]);
+wp_localize_script('bemp_example_js', 'bempAjax', [
   'url' => admin_url('admin-ajax.php')
 ]);
 ?>

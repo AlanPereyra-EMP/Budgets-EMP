@@ -1,0 +1,32 @@
+{
+  "Example": [
+    {"Opción 1": [
+      {"Opciones": [
+        {"1 persona": []},
+        {"2 persona": []},
+        {"3 personas": []}
+      ]}
+    ]},
+    {"Opción 2": [
+      {"Opciones": [
+        {"Venta": []},
+        {"Alquiler": []},
+        {"Alquiler temporal": []}
+      ]}
+    ]},
+    {"Opción 3": [
+      {"Opciones": [
+        {"Venta": []},
+        {"Alquiler": []},
+        {"Alquiler temporal": []}
+      ]}
+    ]},
+    {"Opción 4": [
+      {"Opciones": [
+        {"Venta": []},
+        {"Alquiler": []},
+        {"Alquiler temporal": []}
+      ]}
+    ]}
+  ]
+}
