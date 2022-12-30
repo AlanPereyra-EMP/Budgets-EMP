@@ -1,0 +1,46 @@
+{
+  "Hotel": [
+    {"Tipo": [
+      {"Opciones": [
+        {"Doble (cama matrimonial)": []},
+        {"Doble twin (dos camas)": []},
+        {"Triple (matrimonial y simple)": []},
+        {"Triple (3 simples)": []},
+        {"Cuadruple": []}
+      ]}
+    ]},
+    {"Adultos": [
+      {"Opciones": [
+        {"1 adulto": []},
+        {"2 adultos": []},
+        {"3 adultos": []},
+        {"4 adultos": []},
+        {"más de 4 adultos": []}
+      ]}
+    ]},
+    {"Menores": [
+      {"Opciones": [
+        {"Ninguno": []},
+        {"1 menor": []},
+        {"2 menores": []},
+        {"3 menores": []},
+        {"4 menores": []},
+        {"más de 4 menores": []}
+      ]}
+    ]},
+    {"Habitaciones": [
+      {"Opciones": [
+        {"1 habitación": []},
+        {"2 habitaciones": []},
+        {"3 habitaciones": []},
+        {"más de 3 habitaciones": []}
+      ]}
+    ]},
+    {"Tipo de estadía": [
+      {"Opciones": [
+        {"Vacaciones / Ocio": []},
+        {"Viaje de trabajo": []}
+      ]}
+    ]}
+  ]
+}

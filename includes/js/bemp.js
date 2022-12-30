@@ -72,7 +72,7 @@ function bempAddOption(name, select){
 }
 
 // Create a list with the data that the first function will send
-function bempGetOptions(data, path, h1, getTop, top, step) {
+function bempGetOptions(data, path, h1, getTop, top, step, autoNext) {
   bempOptions.innerHTML = '';
   bempDisableNextBtn();
   bempH1.innerHTML = h1;
@@ -192,7 +192,7 @@ function bempGetOptions(data, path, h1, getTop, top, step) {
         auxPath = Object.keys(auxPath);
       }
 
-      if (auxPath) {
+      if (auxPath||!autoNext) {
         bempEnableNextBtn();
       }else {
         bempDisableNextBtn();
