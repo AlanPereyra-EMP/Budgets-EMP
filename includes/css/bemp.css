@@ -12,25 +12,74 @@
 #bemp-background{
   background: var(--emp-head-title-bg);
   height: 100%;
-  opacity: var(--emp-head-opacity);
+  opacity: .7;
   position: absolute;
   width: 100%;
+}
+@media (max-width: 991px) {
+  #bemp-background{
+    background: var(--emp-head-title-bg)!important;
+  }
 }
 @media (min-width: 992px) {
   #bemp-background{
     background-size: 100%!important;
   }
 }
+#bemp-section{
+  display: flex;
+  height: 100%;
+}
 #bemp-div{
   height: 100%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  opacity: 1;
   position: relative;
+  width: 100%;
+}
+.bemp-img-container{
+  display: none;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .has-personalized-bg #bemp-div{
     margin-right: 8%;
+  }
+  .has-personalized-img #bemp-div{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    margin-left: 5% !important;
+    max-width: 45%;
+  }
+  .bemp-img-container{
+    display: flex;
+    position: relative;
+    width: 50%;
+  }
+  .bemp-img-container .bg{
+    width: 90%;
+    position: absolute;
+    bottom: 10%;
+    height: 45%;
+    left: 50%;
+    transform: translatex(-50%);
+    background: #eeeeee11;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  .bemp-img-container img{
+    height: 80%;
+    max-width: 100% !important;
+    object-fit: contain;
+    margin: auto auto 0 auto;
+    display: block;
+    bottom: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
   }
 }
 #bemp-h1{
@@ -38,53 +87,70 @@
   color: var(--emp-head-title-color);
   display: flex;
   font-family: var(--emp-head-title-tipography), 'sans-serif';
-  height: 20%;
+  height: fit-content;
   margin: 0;
-  justify-content: center;
-  text-align: center;
+  padding: 20% 20px 0 20px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #bemp-h1{
-    font-size: 28px;
+    font-size: 32px;
+  }
+}
+@media (min-width: 567px) {
+  #bemp-h1{
+    font-size: 52px;
+    padding-top: 10%;
+  }
+}
+@media (min-width: 992px) {
+  #bemp-h1{
+    font-size: 40px;
+    margin-top: -100px;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #bemp-h1{
+    height: 15%;
+    font-size: 51px;
+  }
+}
+@media (min-width: 1400px) {
+  #bemp-h1{
+    height: 15%;
+    font-size: 60px;
   }
 }
 #bemp-breadcrumbs{
   align-items: center;
   color: var(--emp-head-title-color);
   display: block;
-  font-size: 12px;
+  font-size: 19px;
   height: 9%;
-  padding: 0 10px;
+  padding: 7px 20px 20px 20px;
+  padding-bottom: 10%;
   transition: all .1s ease-out;
 }
 #bemp-container-options{
   color: var(--emp-head-title-color);
-  height: 56%;
   margin: auto;
   overflow: hidden;
 }
 @media(min-width:992px){
   #bemp-breadcrumbs.onBreadcrumbs {
     font-size: 20px;
-    height: 6%;
-  }
-  #bemp-h1{
-    height: 33%;
-    font-size: 60px;
-  }
-  #bemp-breadcrumbs{
-    height: 3%;
   }
   #bemp-container-options{
     font-size: 25px;
-    height: 40%;
   }
 }
 #bemp-options{
   height: 100%;
   list-style: none;
+  max-height: 400px;
+  max-width: none!important;
   overflow: auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 #bemp-options .d-flex{
   display: flex;
@@ -101,27 +167,36 @@
   font-weight: 700;
   position: relative;
 }
+#bemp-options li.icon{
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px
+}
 #bemp-options li ul{
   padding: 0;
+  max-width: none!important;
+  width: 100%;
 }
 #bemp-options li ul li {
+  border-radius: 8px;
   font-weight: 400;
   list-style: none;
+  margin: 10px 0;
   padding: 10px 0px 10px 30px;
 }
-#bemp-options li ul li:hover {
-  background: #eeeeee77;
+#bemp-options li ul li {
+  background: #eeeeee11;
   cursor: pointer;
+  margin-top: 0;
 }
 #bemp-options li ul li.has-emoji{
   line-height: 37px;
-  margin: 20px 0;
+  margin-bottom: 0;
   min-height: 57px;
   padding-left: 80px;
 }
 .bemp-option-actived{
-  background: var(--emp-head-title-color)!important;
-  color: var(--emp-head-title-bg)!important;
+  background: #eeeeee77!important;
 }
 #bemp-km, #bemp-number, #bemp-data{
   margin: auto;
@@ -146,21 +221,30 @@ input#bemp-name-input, input#bemp-last-name-input {
   width: 100%;
 }
 #bemp-buttons{
-  height: 15%;
-  position: relative;
+  bottom: 10%;
+  height: 90px;
+  position: absolute;
+  width: 100%;
 }
 .bemp-btn{
+  border-radius: 8px;
   bottom: 3%;
   cursor: pointer;
-  font-size: 20px;
-  height: 60%;
-  margin: 2.5% 20px;
+  font-size: 25px;
+  margin: 2.5% 20px -2px 20px;
+  padding: 10px 0;
   position: absolute;
-  width: 38%;
+  width: 45%;
 }
 @media(max-width:991px){
   .bemp-btn{
     margin: 5% 20px;
+    width: 40%;
+  }
+  #bemp-buttons{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
   }
 }
 .bemp-btn-disabled:focus{
@@ -233,6 +317,13 @@ a#btn-searchform, a.fa-dark.fab.fa-whatsapp, .img-fixed {
 .buttons-mobile{
   display: none!important;
 }
+#main-head{
+  height: 160vh!important;
+  opacity: 0;
+}
 header{
   display: none;
+}
+#first-content-page{
+  opacity: 0;
 }

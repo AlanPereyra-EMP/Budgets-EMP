@@ -73,6 +73,14 @@ function bempAddOption(name, select){
 
 // Create a list with the data that the first function will send
 function bempGetOptions(data, path, h1, getTop, top, step, autoNext) {
+  bempH1 = document.getElementById('bemp-h1');
+  bempBreadcrumbs = document.getElementById('bemp-breadcrumbs');
+  bempOptions = document.getElementById('bemp-options');
+  bempOptions = document.getElementById('bemp-options');
+  bempPrevBtn = document.getElementById('bemp-btn-prev');
+  bempNextBtn = document.getElementById('bemp-btn-next');
+  items = document.getElementsByClassName('bemp-option');
+  
   bempOptions.innerHTML = '';
   bempDisableNextBtn();
   bempH1.innerHTML = h1;
@@ -87,13 +95,29 @@ function bempGetOptions(data, path, h1, getTop, top, step, autoNext) {
     getOnlyLower();
   }
 
-  var textLi;
+  var textLi, textLiContent, textLiImg;
   function getTopAndLower(){
     tops = path.length;
     for(var i = 0; i < tops; i++){
       var firstLevelLi = document.createElement("li");
       textLi = document.createTextNode(Object.keys(path[i]));
+      textLiContent = Object.keys(path[i])[0]
+      
+      if(textLiContent.includes('png')||textLiContent.includes('svg')){
+        textLiImg = document.createElement("img");
+
+        if(textLiContent.includes('http')){
+          textLiImg.src = Object.keys(path[i])[0];
+        }else{
+          textLiImg.src = bempUrl+'/includes/img/'+Object.keys(path[i])[0];
+        }
+        textLiImg.classList.add('emoji');
+        textLi = textLiImg;
+      }
+
+
       firstLevelLi.appendChild(textLi);
+      firstLevelLi.classList.add('icon');
       bempOptions.appendChild(firstLevelLi);
 
       var firstLevelUl = document.createElement("ul");
@@ -137,7 +161,7 @@ function bempGetOptions(data, path, h1, getTop, top, step, autoNext) {
     }
     bempBreadcrumbs.innerHTML = aux;
   }else{
-    bempBreadcrumbs.innerHTML = '(No almacenaremos estos datos en nuestros servidores)';
+    bempBreadcrumbs.innerHTML = '(Hacé click en la opción correcta)';
   }
 
   var lastSelected;
@@ -214,10 +238,21 @@ function bempOptionsWithEmogi(){
 function bempHasPersonalizedBackground() {
   var bempBackground = document.getElementById('bemp-background');
   var bempPage = document.getElementById('bemp-page');
+  var bempSection = document.getElementById('bemp-section');
 
   if (bempBg) {
     bempBackground.style.background = "url("+bempBg+") no-repeat 50% 50%";
     bempPage.classList.add("has-personalized-bg");
+  }
+  if (bempImg) {
+    if(!(bempImg.includes('http'))){
+      bempImg = bempUrl+'/includes/img/'+bempImg;
+    }
+    bempPage.classList.add("has-personalized-img");
+    bempSection.innerHTML += `<div class="bemp-img-container">
+                                <div class="bg"></div>
+                                <img src=${bempImg}/>
+                              </div>`;
   }
 }
 bempHasPersonalizedBackground();

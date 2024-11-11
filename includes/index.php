@@ -58,6 +58,11 @@ wp_register_script( 'bemp_hotel_js', $src );
 function add_bemp_hotel_script(){
   wp_enqueue_script( 'bemp_hotel_js', $src);
 }
+$src = plugins_url( 'includes/js/bemp-emp.js', __DIR__ );
+wp_register_script( 'bemp_emp_js', $src );
+function add_bemp_emp_script(){
+  wp_enqueue_script( 'bemp_emp_js', $src);
+}
 
 // Add Ajax support
 wp_localize_script('bemp_cars_js', 'bempAjax', [
