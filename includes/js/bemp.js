@@ -251,7 +251,7 @@ function bempHasPersonalizedBackground() {
     bempPage.classList.add("has-personalized-img");
     bempSection.innerHTML += `<div class="bemp-img-container">
                                 <div class="bg"></div>
-                                <img src=${bempImg}/>
+                                <img src="${bempImg}"/>
                               </div>`;
   }
 }
